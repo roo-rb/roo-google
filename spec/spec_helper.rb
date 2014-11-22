@@ -1,6 +1,6 @@
-require File.expand_path("../../lib/roo-google", __FILE__)
-
+require 'simplecov'
 require 'vcr'
+require 'roo-google'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'

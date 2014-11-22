@@ -1,3 +1,4 @@
+require 'simplecov'
 # require deps
 require 'tmpdir'
 require 'fileutils'
@@ -10,7 +11,7 @@ require 'date'
 require 'webmock/minitest'
 
 # require gem files
-require File.dirname(__FILE__) + '/../lib/roo-google'
+require 'roo-google'
 
 TESTDIR =  File.join(File.dirname(__FILE__), 'files')
 
@@ -45,7 +46,7 @@ def file_diff(fn1,fn2)
 end
 
 def with_each_spreadsheet(name)
-  yield Roo::Spreadsheet.open(File.join(TESTDIR, key_of(name)), extension: '')
+  yield ::Roo::Spreadsheet.open(File.join(TESTDIR, key_of(name)), extension: :google)
 end
 
 def key_of(spreadsheetname)
