@@ -5,6 +5,9 @@ class Roo::Google < Roo::Base
   attr_accessor :date_format, :datetime_format
   # returns an array of sheet names in the spreadsheet
   attr_reader :sheets
+  DATE_FORMAT = '%d/%m/%Y'.freeze
+  DATE_TIME_FORMAT = '%d/%m/%Y %H:%M:%S'.freeze
+  TIME_FORMAT = '%H:%M:%S'.freeze
 
   # Creates a new Google Drive object.
   def initialize(spreadsheet_key, options = {})
@@ -12,23 +15,28 @@ class Roo::Google < Roo::Base
     @user = options[:user] || ENV['GOOGLE_MAIL']
     @password = options[:password] || ENV['GOOGLE_PASSWORD']
     @access_token = options[:access_token] || ENV['GOOGLE_TOKEN']
-
-    @worksheets = session.spreadsheet_by_key(@filename).worksheets
-    @sheets = @worksheets.map(&:title)
-    @default_sheet = @sheets.first
     super
     @cell = Hash.new { |h, k| h[k] = Hash.new }
     @cell_type = Hash.new { |h, k| h[k] = Hash.new }
     @formula = {}
-    @date_format = '%d/%m/%Y'
-    @datetime_format = '%d/%m/%Y %H:%M:%S'
-    @time_format = '%H:%M:%S'
+  end
+
+  def worksheets
+    @worksheets ||= session.spreadsheet_by_key(@filename).worksheets
+  end
+
+  def sheets
+    @sheets ||= worksheets.map(&:title)
+  end
+
+  def default_sheet
+    @default_sheet ||= sheets.first
   end
 
   %w(date time datetime).each do |key|
     class_eval <<-EOS, __FILE__, __LINE__ + 1
       def #{key}?(string)
-        Date.strptime(string, @#{key}_format)
+        Date.strptime(string, #{key.upcase}_FORMAT)
         true
       rescue
         false
@@ -49,8 +57,7 @@ class Roo::Google < Roo::Base
   # (1,1) is the upper left corner.
   # (1,1), (1,'A'), ('A',1), ('a',1) all refers to the
   # cell at the first line and first row.
-  def cell(row, col, sheet = nil)
-    sheet ||= @default_sheet
+  def cell(row, col, sheet = default_sheet)
     validate_sheet!(sheet) # TODO: 2007-12-16
     read_cells(sheet)
     row, col = normalize(row, col)
@@ -79,8 +86,7 @@ class Roo::Google < Roo::Base
   # * :formula
   # * :time
   # * :datetime
-  def celltype(row, col, sheet = nil)
-    sheet ||= @default_sheet
+  def celltype(row, col, sheet = default_sheet)
     read_cells(sheet)
     row, col = normalize(row, col)
     if @formula.size > 0 && @formula[sheet]["#{row},#{col}"]
@@ -93,8 +99,7 @@ class Roo::Google < Roo::Base
   # Returns the formula at (row,col).
   # Returns nil if there is no formula.
   # The method #formula? checks if there is a formula.
-  def formula(row, col, sheet = nil)
-    sheet ||= @default_sheet
+  def formula(row, col, sheet = default_sheet)
     read_cells(sheet)
     row, col = normalize(row, col)
     @formula[sheet]["#{row},#{col}"] && @formula[sheet]["#{row},#{col}"]
@@ -113,8 +118,7 @@ class Roo::Google < Roo::Base
 
   # sets the cell to the content of 'value'
   # a formula can be set in the form of '=SUM(...)'
-  def set(row, col, value, sheet = nil)
-    sheet ||= @default_sheet
+  def set(row, col, value, sheet = default_sheet)
     validate_sheet!(sheet)
 
     sheet_no = sheets.index(sheet) + 1
@@ -137,8 +141,7 @@ class Roo::Google < Roo::Base
 
   %w(first_row last_row first_column last_column).each do |key|
     class_eval <<-EOS, __FILE__, __LINE__ + 1
-      def #{key}(sheet = nil)
-        sheet ||= @default_sheet
+      def #{key}(sheet = default_sheet)
         unless @#{key}[sheet]
           set_first_last_row_column(sheet)
         end
@@ -155,24 +158,21 @@ class Roo::Google < Roo::Base
        rows_and_cols_min_max(sheet_no)
   end
 
-  def _set_value(row, col, value, sheet = nil)
-    sheet ||= @default_sheet
+  def _set_value(row, col, value, sheet = default_sheet)
     @cell[sheet]["#{row},#{col}"] = value
   end
 
-  def set_type(row, col, type, sheet = nil)
-    sheet ||= @default_sheet
+  def set_type(row, col, type, sheet = default_sheet)
     @cell_type[sheet]["#{row},#{col}"] = type
   end
 
   # read all cells in a sheet.
-  def read_cells(sheet = nil)
-    sheet ||= @default_sheet
+  def read_cells(sheet = default_sheet)
     validate_sheet!(sheet)
     return if @cells_read[sheet]
 
     sheet_no = sheets.index(sheet)
-    ws = @worksheets[sheet_no]
+    ws = worksheets[sheet_no]
     for row in 1..ws.num_rows
       for col in 1..ws.num_cols
         key = "#{row},#{col}"
@@ -216,8 +216,8 @@ class Roo::Google < Roo::Base
 
   def add_to_cell_roo(row, col, value, sheet_no = 1)
     sheet_no -= 1
-    @worksheets[sheet_no][row, col] = value
-    @worksheets[sheet_no].save
+    worksheets[sheet_no][row, col] = value
+    worksheets[sheet_no].save
   end
 
   def entry_roo(value, row, col)
@@ -225,7 +225,7 @@ class Roo::Google < Roo::Base
   end
 
   def rows_and_cols_min_max(sheet_no)
-    ws = @worksheets[sheet_no - 1]
+    ws = worksheets[sheet_no - 1]
     rows = []
     cols = []
     for row in 1..ws.num_rows
