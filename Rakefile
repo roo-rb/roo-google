@@ -17,6 +17,7 @@ RSpec::Core::RakeTask.new(:spec)
 # Coveralls
 Coveralls::RakeTask.new
 
-task test_with_coveralls: [:spec, 'coveralls:push']
+default_task = [:spec]
+default_task << 'coveralls:push' if ENV['TRAVIS']
 
-task default: :spec
+task default: default_task
