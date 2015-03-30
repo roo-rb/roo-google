@@ -5,20 +5,18 @@ class Roo::Google < Roo::Base
   attr_accessor :date_format, :datetime_format
   # returns an array of sheet names in the spreadsheet
   attr_reader :sheets
-  DATE_FORMAT = '%d/%m/%Y'.freeze
+  DATE_FORMAT      = '%d/%m/%Y'.freeze
   DATE_TIME_FORMAT = '%d/%m/%Y %H:%M:%S'.freeze
-  TIME_FORMAT = '%H:%M:%S'.freeze
+  TIME_FORMAT      = '%H:%M:%S'.freeze
 
   # Creates a new Google Drive object.
   def initialize(spreadsheet_key, options = {})
-    @filename = spreadsheet_key
-    @user = options[:user] || ENV['GOOGLE_MAIL']
-    @password = options[:password] || ENV['GOOGLE_PASSWORD']
+    @filename     = spreadsheet_key
     @access_token = options[:access_token] || ENV['GOOGLE_TOKEN']
     super
-    @cell = Hash.new { |h, k| h[k] = Hash.new }
+    @cell      = Hash.new { |h, k| h[k] = Hash.new }
     @cell_type = Hash.new { |h, k| h[k] = Hash.new }
-    @formula = {}
+    @formula   = {}
   end
 
   def worksheets
@@ -27,10 +25,6 @@ class Roo::Google < Roo::Base
 
   def sheets
     @sheets ||= worksheets.map(&:title)
-  end
-
-  def default_sheet
-    @default_sheet ||= sheets.first
   end
 
   %w(date time datetime).each do |key|
@@ -61,21 +55,19 @@ class Roo::Google < Roo::Base
     validate_sheet!(sheet) # TODO: 2007-12-16
     read_cells(sheet)
     row, col = normalize(row, col)
-    value = @cell[sheet]["#{row},#{col}"]
-    if celltype(row, col, sheet) == :date
-      begin
-        return  Date.strptime(value, @date_format)
-      rescue ArgumentError
-        raise "Invalid Date #{sheet}[#{row},#{col}] #{value} using format '{@date_format}'"
-      end
-    elsif celltype(row, col, sheet) == :datetime
-      begin
-        return  DateTime.strptime(value, @datetime_format)
-      rescue ArgumentError
-        raise "Invalid DateTime #{sheet}[#{row},#{col}] #{value} using format '{@datetime_format}'"
-      end
+    value    = @cell[sheet]["#{row},#{col}"]
+    type     = celltype(row, col, sheet)
+    return value unless [:date, :datetime].include?(type)
+    klass, format = if type == :date
+                      [::Date, @date_format]
+                    else
+                      [::DateTime, @datetime_format]
+                    end
+    begin
+      return klass.strptime(value, format)
+    rescue ArgumentError
+      raise "Invalid #{klass} #{sheet}[#{row},#{col}] #{value} using format '#{format}'"
     end
-    value
   end
 
   # returns the type of a cell:
@@ -104,6 +96,7 @@ class Roo::Google < Roo::Base
     row, col = normalize(row, col)
     @formula[sheet]["#{row},#{col}"] && @formula[sheet]["#{row},#{col}"]
   end
+
   alias_method :formula?, :formula
 
   # true, if the cell is empty
@@ -153,9 +146,9 @@ class Roo::Google < Roo::Base
   private
 
   def set_first_last_row_column(sheet)
-    sheet_no = sheets.index(sheet) + 1
+    sheet_no                                                                       = sheets.index(sheet) + 1
     @first_row[sheet], @last_row[sheet], @first_column[sheet], @last_column[sheet] =
-       rows_and_cols_min_max(sheet_no)
+      rows_and_cols_min_max(sheet_no)
   end
 
   def _set_value(row, col, value, sheet = default_sheet)
@@ -172,17 +165,17 @@ class Roo::Google < Roo::Base
     return if @cells_read[sheet]
 
     sheet_no = sheets.index(sheet)
-    ws = worksheets[sheet_no]
+    ws       = worksheets[sheet_no]
     for row in 1..ws.num_rows
       for col in 1..ws.num_cols
-        key = "#{row},#{col}"
-        string_value = ws.input_value(row, col) # item['inputvalue'] ||  item['inputValue']
-        numeric_value = ws[row, col] # item['numericvalue']  ||  item['numericValue']
-        (value, value_type) = determine_datatype(string_value, numeric_value)
-        @cell[sheet][key] = value unless value == '' || value.nil?
+        key                    = "#{row},#{col}"
+        string_value           = ws.input_value(row, col) # item['inputvalue'] ||  item['inputValue']
+        numeric_value          = ws[row, col] # item['numericvalue']  ||  item['numericValue']
+        (value, value_type)    = determine_datatype(string_value, numeric_value)
+        @cell[sheet][key]      = value unless value == '' || value.nil?
         @cell_type[sheet][key] = value_type
-        @formula[sheet] = {} unless @formula[sheet]
-        @formula[sheet][key] = string_value if value_type == :formula
+        @formula[sheet]        = {} unless @formula[sheet]
+        @formula[sheet][key]   = string_value if value_type == :formula
       end
     end
     @cells_read[sheet] = true
@@ -202,10 +195,10 @@ class Roo::Google < Roo::Base
       elsif date?(val)
         ty = :date
       elsif numeric?(val)
-        ty = :float
+        ty  = :float
         val = val.to_f
       elsif time?(val)
-        ty = :time
+        ty  = :time
         val = timestring_to_seconds(val)
       else
         ty = :string
@@ -215,7 +208,7 @@ class Roo::Google < Roo::Base
   end
 
   def add_to_cell_roo(row, col, value, sheet_no = 1)
-    sheet_no -= 1
+    sheet_no                       -= 1
     worksheets[sheet_no][row, col] = value
     worksheets[sheet_no].save
   end
@@ -225,7 +218,7 @@ class Roo::Google < Roo::Base
   end
 
   def rows_and_cols_min_max(sheet_no)
-    ws = worksheets[sheet_no - 1]
+    ws   = worksheets[sheet_no - 1]
     rows = []
     cols = []
     for row in 1..ws.num_rows
@@ -244,12 +237,10 @@ class Roo::Google < Roo::Base
   end
 
   def session
-    @session ||= if @user && @password
-                   ::GoogleDrive.login(@user, @password)
-                 elsif @access_token
+    @session ||= if @access_token
                    ::GoogleDrive.login_with_oauth(@access_token)
                  else
-                   warn 'set user and password or access token'
+                   warn 'set access token'
                  end
   end
 end
