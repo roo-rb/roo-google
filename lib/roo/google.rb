@@ -2,11 +2,11 @@ require 'roo/base'
 require 'google_drive'
 
 class Roo::Google < Roo::Base
-  attr_accessor :date_format, :datetime_format
+  attr_accessor :date_format, :datetime_format, :time_format
   # returns an array of sheet names in the spreadsheet
   attr_reader :sheets
   DATE_FORMAT      = '%d/%m/%Y'.freeze
-  DATE_TIME_FORMAT = '%d/%m/%Y %H:%M:%S'.freeze
+  DATETIME_FORMAT = '%d/%m/%Y %H:%M:%S'.freeze
   TIME_FORMAT      = '%H:%M:%S'.freeze
 
   # Creates a new Google Drive object.
@@ -17,6 +17,9 @@ class Roo::Google < Roo::Base
     @cell      = Hash.new { |h, k| h[k] = Hash.new }
     @cell_type = Hash.new { |h, k| h[k] = Hash.new }
     @formula   = {}
+    %w(date time datetime).each do |key|
+      __send__("#{key}_format=", self.class.const_get("#{key.upcase}_FORMAT"))
+    end
   end
 
   def worksheets
@@ -30,7 +33,7 @@ class Roo::Google < Roo::Base
   %w(date time datetime).each do |key|
     class_eval <<-EOS, __FILE__, __LINE__ + 1
       def #{key}?(string)
-        Date.strptime(string, #{key.upcase}_FORMAT)
+        ::DateTime.strptime(string, @#{key}_format || #{key.upcase}_FORMAT)
         true
       rescue
         false
@@ -100,7 +103,7 @@ class Roo::Google < Roo::Base
   alias_method :formula?, :formula
 
   # true, if the cell is empty
-  def empty?(row, col, sheet = nil)
+  def empty?(row, col, sheet = default_sheet)
     value = cell(row, col, sheet)
     return true unless value
     return false if value.class == Date # a date is never empty
@@ -126,12 +129,6 @@ class Roo::Google < Roo::Base
     end
   end
 
-  # *DEPRECATED*: Use Roo::Google#set instead
-  def set_value(row, col, value, sheet = nil)
-    warn '[DEPRECATION] `set_value` is deprecated.  Please use `set` instead.'
-    set(row, col, value, sheet)
-  end
-
   %w(first_row last_row first_column last_column).each do |key|
     class_eval <<-EOS, __FILE__, __LINE__ + 1
       def #{key}(sheet = default_sheet)
@@ -146,7 +143,7 @@ class Roo::Google < Roo::Base
   private
 
   def set_first_last_row_column(sheet)
-    sheet_no                                                                       = sheets.index(sheet) + 1
+    sheet_no = sheets.index(sheet) + 1
     @first_row[sheet], @last_row[sheet], @first_column[sheet], @last_column[sheet] =
       rows_and_cols_min_max(sheet_no)
   end
@@ -233,7 +230,8 @@ class Roo::Google < Roo::Base
   end
 
   def reinitialize
-    initialize(@filename, user: @user, password: @password, access_token: @access_token)
+    @session = nil
+    initialize(@filename, access_token: @access_token)
   end
 
   def session

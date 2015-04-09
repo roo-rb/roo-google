@@ -1,47 +1,35 @@
 require 'spec_helper'
 
-describe Roo::Google do
-  let(:key) { '0AiokXJytm-hjdDhYbTNvZ3pDWm9oZm9yWURLX3ZoR2c' }
+RSpec.describe Roo::Google do
+  def key_of(spreadsheetname)
+    {
+      'write.me' => '0AvDjm7u2fQg_dEZOc0Z0bU1CeWEtYUZOOVdtTkoxaEE',
+      'numbers1' => '0AvDjm7u2fQg_dGJLQnhqMUJlYTNzSGh3cF95NWRlQUE',
+      'matrix'   => '0AvDjm7u2fQg_dFF0bDVQbXN0dTd5eHpqcG4tckR1M2c'
+    }[spreadsheetname]
+  end
 
-  describe '.new' do
-    context 'given a username and password' do
-      let(:user) { 'user' }
-      let(:password) { 'password' }
+  let(:access_token) { 'ya29.UAG8d0gmCfJrTzgwQdWTHqG7fDoilKh-aJDSBAmVdre1CDfUHz0ouOwANUVVDnyWVZKSGa_EBUYZqw' }
+  let(:key) { '0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc' }
+  subject { described_class.new(key, access_token: access_token) }
 
-      subject {
-        Roo::Google.new(key, user: user, password: password)
-      }
-
-      it 'creates an instance' do
-        VCR.use_cassette('google_drive') do
-          expect(subject).to be_a(Roo::Google)
-        end
-      end
-    end
-
+  context '.new' do
     context 'given an access token' do
-      let(:access_token) { 'ya29.AHES6ZR1kGjlmlLJG9skjpO0IjzQ6qDohXwFJclzD7mHI9xa-cFzlg' }
 
       subject {
-        Roo::Google.new(key, access_token: access_token)
+        described_class.new(key, access_token: access_token)
       }
 
       it 'creates an instance' do
         VCR.use_cassette('google_drive_access_token') do
-          expect(subject).to be_a(Roo::Google)
+          expect(subject).to be_a(described_class)
         end
       end
     end
   end
 
-  describe '.set' do
-    let(:key) { '0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc' }
-    let(:user) { 'user' }
-    let(:password) { "password" }
-
-    subject {
-      Roo::Google.new(key, user: user, password: password)
-    }
+  context '.set' do
+    let(:key) { '0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc' }
 
     it 'records the value' do
       VCR.use_cassette('google_drive_set') do
@@ -61,4 +49,65 @@ describe Roo::Google do
     end
   end
 
+  context '#date?' do
+    {
+      'DDMMYYYY' => { format: nil, values: ['21/11/1962', '11/21/1962'] },
+      'MMDDYYYY' => { format: '%m/%d/%Y', values: ['11/21/1962', '21/11/1962'] },
+      'YYYYMMDD' => { format: '%Y-%m-%d', values: ['1962-11-21', '1962-21-11'] }
+    }.each do |title, data|
+      context title do
+        before :each do
+          subject.date_format = data[:format] if data[:format]
+        end
+        it "should accept #{data[:values][0]}" do
+          expect(subject.date?(data[:values][0])).to be_truthy
+        end
+        it "should not accept #{data[:values][1]}" do
+          expect(subject.date?(data[:values][1])).to be_falsey
+        end
+      end
+    end
+  end
+
+  context 'numbers1 document' do
+    before :all do
+      VCR.insert_cassette('google_drive_numbers1')
+    end
+    let(:key) { key_of('numbers1') }
+    it 'check date fields' do
+      expect(subject.celltype(5,1)).to eq(:date)
+      expect(subject.cell(5,1)).to eq(Date.new(1961, 11, 21))
+      expect(subject.cell(5,1).to_s).to eq('1961-11-21')
+    end
+    it 'check datetime fields' do
+      expect(subject.celltype(18,3)).to eq(:datetime)
+      expect(subject.cell(18,3)).to eq(DateTime.new(2014, 12, 12, 12, 12, 0))
+    end
+    it 'check time fields' do
+      # 13:46:12
+      expect(subject.celltype(18,4)).to eq(:time)
+      expect(subject.cell(18,4)).to eq(49572)
+    end
+    it 'should check float' do
+      expect(subject.celltype(2,7)).to eq(:float)
+    end
+    it 'should check string' do
+      expect(subject.celltype(2,6)).to eq(:string)
+      expect(subject.cell(2,6)).to eq('test')
+    end
+    it 'should check formula' do
+      expect(subject.celltype(1,'F')).to eq(:formula)
+      expect(subject.cell(1,'F')).to eq(20)
+      expect(subject.formula(1,'F')).to eq('=SUM(RC[-5]:RC[-1])')
+    end
+    it 'check empty?' do
+      expect(subject.empty?(2,7)).to be_falsey
+      expect(subject.empty?(2,6)).to be_falsey
+      expect(subject.empty?(18,4)).to be_falsey
+      expect(subject.empty?(18,5)).to be_truthy
+    end
+    after :all do
+      VCR.eject_cassette('google_drive_numbers1')
+    end
+  end
 end
