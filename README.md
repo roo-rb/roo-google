@@ -2,7 +2,7 @@
 
 ### Google Spreadsheet
 
-Using Roo to access Google spreadsheets requires you install the 'google-spreadsheet-ruby' gem separately.
+Using Roo to access Google spreadsheets requires you install the 'google-drive-ruby' gem separately.
 
 ## Installation
 
@@ -26,7 +26,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/roo-google/fork )
+1. Fork it ( https://github.com/roo-rb/roo-google/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
