@@ -5,9 +5,9 @@ class Roo::Google < Roo::Base
   attr_accessor :date_format, :datetime_format, :time_format
   # returns an array of sheet names in the spreadsheet
   attr_reader :sheets
-  DATE_FORMAT      = '%d/%m/%Y'.freeze
+  DATE_FORMAT     = '%d/%m/%Y'.freeze
   DATETIME_FORMAT = '%d/%m/%Y %H:%M:%S'.freeze
-  TIME_FORMAT      = '%H:%M:%S'.freeze
+  TIME_FORMAT     = '%H:%M:%S'.freeze
 
   # Creates a new Google Drive object.
   def initialize(spreadsheet_key, options = {})
@@ -143,7 +143,7 @@ class Roo::Google < Roo::Base
   private
 
   def set_first_last_row_column(sheet)
-    sheet_no = sheets.index(sheet) + 1
+    sheet_no                                                                       = sheets.index(sheet) + 1
     @first_row[sheet], @last_row[sheet], @first_column[sheet], @last_column[sheet] =
       rows_and_cols_min_max(sheet_no)
   end
@@ -161,40 +161,40 @@ class Roo::Google < Roo::Base
     validate_sheet!(sheet)
     return if @cells_read[sheet]
 
-    sheet_no = sheets.index(sheet)
-    ws       = worksheets[sheet_no]
+    ws = worksheets[sheets.index(sheet)]
     for row in 1..ws.num_rows
       for col in 1..ws.num_cols
-        key                    = "#{row},#{col}"
-        string_value           = ws.input_value(row, col) # item['inputvalue'] ||  item['inputValue']
-        numeric_value          = ws[row, col] # item['numericvalue']  ||  item['numericValue']
-        (value, value_type)    = determine_datatype(string_value, numeric_value)
-        @cell[sheet][key]      = value unless value == '' || value.nil?
-        @cell_type[sheet][key] = value_type
-        @formula[sheet]        = {} unless @formula[sheet]
-        @formula[sheet][key]   = string_value if value_type == :formula
+        read_cell_row(sheet, ws, row, col)
       end
     end
     @cells_read[sheet] = true
   end
 
+  def read_cell_row(sheet, ws, row, col)
+    key                    = "#{row},#{col}"
+    string_value           = ws.input_value(row, col) # item['inputvalue'] ||  item['inputValue']
+    numeric_value          = ws[row, col] # item['numericvalue']  ||  item['numericValue']
+    (value, value_type)    = determine_datatype(string_value, numeric_value)
+    @cell[sheet][key]      = value unless value == '' || value.nil?
+    @cell_type[sheet][key] = value_type
+    @formula[sheet]        = {} unless @formula[sheet]
+    @formula[sheet][key]   = string_value if value_type == :formula
+  end
+
   def determine_datatype(val, numval = nil)
     if val.nil? || val[0, 1] == '='
-      ty = :formula
-      if numeric?(numval)
-        val = numval.to_f
-      else
-        val = numval
-      end
+      ty  = :formula
+      val = numeric?(numval) ? numval.to_f : numval
     else
-      if datetime?(val)
+      case
+      when datetime?(val)
         ty = :datetime
-      elsif date?(val)
+      when date?(val)
         ty = :date
-      elsif numeric?(val)
+      when numeric?(val)
         ty  = :float
         val = val.to_f
-      elsif time?(val)
+      when time?(val)
         ty  = :time
         val = timestring_to_seconds(val)
       else
@@ -205,7 +205,7 @@ class Roo::Google < Roo::Base
   end
 
   def add_to_cell_roo(row, col, value, sheet_no = 1)
-    sheet_no                       -= 1
+    sheet_no -= 1
     worksheets[sheet_no][row, col] = value
     worksheets[sheet_no].save
   end
