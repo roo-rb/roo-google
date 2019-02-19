@@ -3,14 +3,14 @@ require 'spec_helper'
 RSpec.describe Roo::Google do
   def key_of(spreadsheetname)
     {
-      'write.me' => '0AvDjm7u2fQg_dEZOc0Z0bU1CeWEtYUZOOVdtTkoxaEE',
-      'numbers1' => '0AvDjm7u2fQg_dGJLQnhqMUJlYTNzSGh3cF95NWRlQUE',
-      'matrix'   => '0AvDjm7u2fQg_dFF0bDVQbXN0dTd5eHpqcG4tckR1M2c'
+      'write.me' => '1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4',
+      'numbers1' => '1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4',
+      'matrix'   => '1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4'
     }[spreadsheetname]
   end
 
-  let(:access_token) { 'ya29.UAG8d0gmCfJrTzgwQdWTHqG7fDoilKh-aJDSBAmVdre1CDfUHz0ouOwANUVVDnyWVZKSGa_EBUYZqw' }
-  let(:key) { '0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc' }
+  let(:access_token) { 'ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew' }
+  let(:key) { '1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4' }
   subject { described_class.new(key, access_token: access_token) }
 
   context '.new' do
@@ -29,7 +29,7 @@ RSpec.describe Roo::Google do
   end
 
   context '.set' do
-    let(:key) { '0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc' }
+    let(:key) { '1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4' }
 
     it 'records the value' do
       VCR.use_cassette('google_drive_set') do
@@ -84,9 +84,9 @@ RSpec.describe Roo::Google do
       expect(subject.cell(18,3)).to eq(DateTime.new(2014, 12, 12, 12, 12, 0))
     end
     it 'check time fields' do
-      # 13:46:12
+      # 1:46:12
       expect(subject.celltype(18,4)).to eq(:time)
-      expect(subject.cell(18,4)).to eq(49572)
+      expect(subject.cell(18,4)).to eq(6372)
     end
     it 'should check float' do
       expect(subject.celltype(2,7)).to eq(:float)
@@ -97,8 +97,8 @@ RSpec.describe Roo::Google do
     end
     it 'should check formula' do
       expect(subject.celltype(1,'F')).to eq(:formula)
-      expect(subject.cell(1,'F')).to eq(20)
-      expect(subject.formula(1,'F')).to eq('=SUM(RC[-5]:RC[-1])')
+      expect(subject.cell(1,'F')).to eq(7535)
+      expect(subject.formula(1,'F')).to eq('=SUM(R[0]C[4],R[0]C[5])')
     end
     it 'check empty?' do
       expect(subject.empty?(2,7)).to be_falsey
