@@ -1,580 +1,35 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://www.google.com/accounts/ClientLogin
+    method: get
+    uri: https://www.googleapis.com/drive/v3/files/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4?fields=*&supportsTeamDrives=true
     body:
       encoding: UTF-8
-      string: accountType=HOSTED_OR_GOOGLE&Email=user&Passwd=password&service=wise&source=Gimite-RubyGoogleDrive-1.00
+      string: ''
     headers:
+      User-Agent:
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 19 Feb 2019 19:10:09 GMT
+      Authorization:
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
       Content-Type:
       - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - text/plain
-      X-Frame-Options:
-      - DENY
-      Cache-Control:
-      - no-cache, no-store
-      Pragma:
-      - no-cache
       Expires:
-      - Mon, 01-Jan-1990 00:00:00 GMT
+      - Tue, 19 Feb 2019 19:10:00 GMT
       Date:
-      - Fri, 06 Dec 2013 18:42:35 GMT
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '1095'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic
-    body:
-      encoding: UTF-8
-      string: |
-        SID=DQAAAMoAAAA8IKlqi2aGAAGTzd6pCfMwqwabb79_cvhermJV2M78CNvpiYiujQEkQMienaye4SnKIV-oS6r6KEdGp46SZy5radXnkV5pxGSHLWvExZh7pGH7o3cgmvF8N3WX_FWdGQatg_-ypztq4tgHb_E3wlQtRmT1snh8lqVDIqoaXXdlQJ_WKvgPW8NBAOQBMsnb2fV0FX2abuth0DzS6t9gpR_f-1w8d8jI7rwgBhVg0PxxHPUJMnciPDaEjK3WxLj-zGgPCZfr6vBG8asFAjFzCDYO
-        LSID=DQAAAMsAAADMWltQuejlYd78Px9RfXhcHnb7tlPHfKPY4i69F9Hi0dhIQbyFRlHVcyMKaR3ajpm39Tx27o5qgddVcti2kZ3CoOB6bthhPlKls7s4G9nz8ObyHSilTTNP5tjNdNNz0--4NP9lacZ-UHhKoDGKnH6lgKFi6BaCAHpQzXo-vsvStxXqo0D1OE81zL2UOYRvN1rc9evr04qtlSvCHQ8THv7eH8SGwZrdf_okjtKQDyLaEJFn5d0_YP-CiM1JLNyNtjwk6E3cWEi8NUrZh459-Lif
-        Auth=DQAAAMwAAADMWltQuejlYd78Px9RfXhcHnb7tlPHfKPY4i69F9Hi0dhIQbyFRlHVcyMKaR3ajpn7yZLj-g3LYQk1SM-i9ejg3r4yH0rj9yZsBcy0ZiJV1L45w4jGXlgrvse68D5axixvDp7T7u6P6K-eOJj2SaKw8vBj156hBEyn4CQFJ0tVUjl5UPAN9Wt8hJmRNqULG3LoxYwLidLgPVjCtL-lF0YnUiSwbolVBzZAbyeYk1QSzX9xT5ms3sTQ4ESz42Bg9SQbc6kdlcWzvmQ_sO5GfrTY
-    http_version: 
-  recorded_at: Fri, 06 Dec 2013 18:42:32 GMT
-- request:
-    method: post
-    uri: https://www.google.com/accounts/ClientLogin
-    body:
-      encoding: UTF-8
-      string: accountType=HOSTED_OR_GOOGLE&Email=user&Passwd=password&service=writely&source=Gimite-RubyGoogleDrive-1.00
-    headers:
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - text/plain
-      X-Frame-Options:
-      - DENY
-      Cache-Control:
-      - no-cache, no-store
-      Pragma:
-      - no-cache
-      Expires:
-      - Mon, 01-Jan-1990 00:00:00 GMT
-      Date:
-      - Fri, 06 Dec 2013 18:42:35 GMT
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '1073'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic
-    body:
-      encoding: UTF-8
-      string: |
-        SID=DQAAAMoAAAA8IKlqi2aGAAGTzd6pCfMwqwabb79_cvhermJV2M78CNvpiYiujQEkQMienaye4SnKIV-oS6r6KEdGp46SZy5radXnkV5pxGSHLWvExZh7pGH7o3cgmvF8N3WX_FWdGQatg_-ypztq4tgHb_E3wlQtRmT1snh8lqVDIqoaXXdlQJ_WKvgPW8NBAOQBMsnb2fV0FX2abuth0DzS6t9gpR_f-1w8d8jI7rwgBhVg0PxxHPUJMnciPDaEjK3WxLj-zGgPCZfr6vBG8asFAjFzCDYO
-        LSID=DQAAAMsAAADMWltQuejlYd78Px9RfXhcHnb7tlPHfKPY4i69F9Hi0dhIQbyFRlHVcyMKaR3ajpm39Tx27o5qgddVcti2kZ3CoOB6bthhPlKls7s4G9nz8ObyHSilTTNP5tjNdNNz0--4NP9lacZ-UHhKoDGKnH6lgKFi6BaCAHpQzXo-vsvStxXqo0D1OE81zL2UOYRvN1rc9evr04qtlSvCHQ8THv7eH8SGwZrdf_okjtKQDyLaEJFn5d0_YP-CiM1JLNyNtjwk6E3cWEi8NUrZh459-Lif
-        Auth=DQAAAMwAAADMWltQuejlYd78Px9RfXhcHnb7tlPHfKPY4i69F9Hi0dhIQbyFRlHVcyMKaR3ajpn7yZLj-g3LYQk1SM-i9ejg3r4yH0rj9yZsBcy0ZiJV1L45w4jGXlgrvse68D5axixvDp7T7u6P6K-eOJj2SaKw8vBj156hBEyn4CQFJ0tVUjl5UPAN9Wt8hJmRNqULG3LoxYwLidLgPVjCtL-lF0YnUiSwbolVBzZAbyeYk1QSzX9xT5ms3sTQ4ESz42Bg9SQbc6kdlcWzvmQ_sO5GfrTY
-    http_version: 
-  recorded_at: Fri, 06 Dec 2013 18:42:32 GMT
-- request:
-    method: get
-    uri: https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full?max-col=2&max-row=1&min-col=2&min-row=1&return-empty=true
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Authorization:
-      - GoogleLogin auth=DQAAAMwAAADMWltQuejlYd78Px9RfXhcHnb7tlPHfKPY4i69F9Hi0dhIQbyFRlHVcyMKaR3ajpn7yZLj-g3LYQk1SM-i9ejg3r4yH0rj9yZsBcy0ZiJV1L45w4jGXlgrvse68D5axixvDp7T7u6P6K-eOJj2SaKw8vBj156hBEyn4CQFJ0tVUjl5UPAN9Wt8hJmRNqULG3LoxYwLidLgPVjCtL-lF0YnUiSwbolVBzZAbyeYk1QSzX9xT5ms3sTQ4ESz42Bg9SQbc6kdlcWzvmQ_sO5GfrTY
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/atom+xml; charset=UTF-8
-      Expires:
-      - Fri, 06 Dec 2013 18:42:36 GMT
-      Date:
-      - Fri, 06 Dec 2013 18:42:36 GMT
+      - Tue, 19 Feb 2019 19:10:00 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
-      Vary:
-      - Accept, X-GData-Authorization, GData-Version
-      Gdata-Version:
-      - '1.0'
-      Last-Modified:
-      - Fri, 06 Dec 2013 18:42:36 GMT
-      Set-Cookie:
-      - NID=67=hhR3BKtLhLtG5S2t0nQaY4JGPepDUM1oEg9hVFPsovK6AmMJUZT2qFNPlAPMQh3hNeekREIDFd8mJrRKbQObDz1j1cSgeaEXQfqG5kojHxLDhIi8vppQ4CSYiprjxa_p;Domain=.google.com;Path=/;Expires=Sat,
-        07-Jun-2014 18:42:36 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
-        xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'
-        xmlns:batch='http://schemas.google.com/gdata/batch'><id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full</id><updated>2013-12-06T18:42:36.550Z</updated><category
-        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>Sheet1</title><link rel='alternate' type='text/html' href='https://spreadsheets.google.com/ccc?key=0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc'/><link
-        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full'/><link
-        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full'/><link
-        rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/batch'/><link
-        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full?min-col=2&amp;max-col=2&amp;return-empty=true&amp;max-row=1&amp;min-row=1'/><author><name>paul.jungwirth</name><email>paul.jungwirth@gmail.com</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>100</gs:rowCount><gs:colCount>20</gs:colCount><entry><id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R1C2</id><updated>2013-12-06T18:42:36.550Z</updated><category
-        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>B1</title><content type='text'>1x2</content><link rel='self' type='application/atom+xml'
-        href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R1C2'/><link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R1C2/a0omj'/><gs:cell
-        row='1' col='2' inputValue='1x2'>1x2</gs:cell></entry></feed>"
-    http_version: 
-  recorded_at: Fri, 06 Dec 2013 18:42:34 GMT
-- request:
-    method: post
-    uri: https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/batch
-    body:
-      encoding: UTF-8
-      string: |2
-                        <feed xmlns="http://www.w3.org/2005/Atom"
-                              xmlns:batch="http://schemas.google.com/gdata/batch"
-                              xmlns:gs="http://schemas.google.com/spreadsheets/2006">
-                          <id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full</id>
-                          <entry>
-                            <batch:id>1,2</batch:id>
-                            <batch:operation type="update"/>
-                            <id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R1C2</id>
-                            <link rel="edit" type="application/atom+xml"
-                              href="https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R1C2/a0omj"/>
-                            <gs:cell row="1" col="2" inputValue="1x2"/>
-                          </entry>
-                        </feed>
-    headers:
-      Authorization:
-      - GoogleLogin auth=DQAAAMwAAADMWltQuejlYd78Px9RfXhcHnb7tlPHfKPY4i69F9Hi0dhIQbyFRlHVcyMKaR3ajpn7yZLj-g3LYQk1SM-i9ejg3r4yH0rj9yZsBcy0ZiJV1L45w4jGXlgrvse68D5axixvDp7T7u6P6K-eOJj2SaKw8vBj156hBEyn4CQFJ0tVUjl5UPAN9Wt8hJmRNqULG3LoxYwLidLgPVjCtL-lF0YnUiSwbolVBzZAbyeYk1QSzX9xT5ms3sTQ4ESz42Bg9SQbc6kdlcWzvmQ_sO5GfrTY
-      Content-Type:
-      - application/atom+xml
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/atom+xml; charset=UTF-8
-      Gdata-Version:
-      - '1.0'
-      Set-Cookie:
-      - NID=67=WJlvr-zjLEBTHM3AILcNGXJCtQU7Ws80r_fjKRTUlZu7Thu-BXXbTT-uPjMuwwlh4TB5RBo26S6SsFmR6roLsMqKYIECSGxbxul99InG1vOqjS4Ee7f3t46uZ-ypq-Ge;Domain=.google.com;Path=/;Expires=Sat,
-        07-Jun-2014 18:42:37 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      Date:
-      - Fri, 06 Dec 2013 18:42:37 GMT
-      Expires:
-      - Fri, 06 Dec 2013 18:42:37 GMT
-      Cache-Control:
-      - private, max-age=0
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: "<?xml version='1.0' encoding='UTF-8'?><atom:feed xmlns:atom='http://www.w3.org/2005/Atom'
-        xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'
-        xmlns:batch='http://schemas.google.com/gdata/batch'><atom:id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/batch/1386355357170</atom:id><atom:updated>2013-12-06T18:42:37.181Z</atom:updated><atom:title
-        type='text'>Batch Feed</atom:title><atom:entry><atom:id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R1C2</atom:id><atom:updated>2013-12-06T18:42:37.175Z</atom:updated><atom:category
-        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><atom:title
-        type='text'>B1</atom:title><atom:content type='text'>1x2</atom:content><atom:link
-        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R1C2'/><atom:link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R1C2/a0omj'/><gs:cell
-        row='1' col='2' inputValue='1x2'>1x2</gs:cell><batch:id>1,2</batch:id><batch:status
-        code='200' reason='Success'/><batch:operation type='update'/></atom:entry></atom:feed>"
-    http_version: 
-  recorded_at: Fri, 06 Dec 2013 18:42:34 GMT
-- request:
-    method: get
-    uri: https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full?max-col=1&max-row=2&min-col=1&min-row=2&return-empty=true
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Authorization:
-      - GoogleLogin auth=DQAAAMwAAADMWltQuejlYd78Px9RfXhcHnb7tlPHfKPY4i69F9Hi0dhIQbyFRlHVcyMKaR3ajpn7yZLj-g3LYQk1SM-i9ejg3r4yH0rj9yZsBcy0ZiJV1L45w4jGXlgrvse68D5axixvDp7T7u6P6K-eOJj2SaKw8vBj156hBEyn4CQFJ0tVUjl5UPAN9Wt8hJmRNqULG3LoxYwLidLgPVjCtL-lF0YnUiSwbolVBzZAbyeYk1QSzX9xT5ms3sTQ4ESz42Bg9SQbc6kdlcWzvmQ_sO5GfrTY
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/atom+xml; charset=UTF-8
-      Expires:
-      - Fri, 06 Dec 2013 18:42:37 GMT
-      Date:
-      - Fri, 06 Dec 2013 18:42:37 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Vary:
-      - Accept, X-GData-Authorization, GData-Version
-      Gdata-Version:
-      - '1.0'
-      Last-Modified:
-      - Fri, 06 Dec 2013 18:42:37 GMT
-      Set-Cookie:
-      - NID=67=qlpkP4soWbj82eIRnnuyRBgS2Dhtnme752d7DANDieb5DLamkoMJ2l6DeLbIpgqK2Li1Qd-Ere-TGYfc0D9p2i-JnezagCE1Hc_YzPX9Ln2zsSVSjMLMP6f_sRowsHSJ;Domain=.google.com;Path=/;Expires=Sat,
-        07-Jun-2014 18:42:37 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
-        xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'
-        xmlns:batch='http://schemas.google.com/gdata/batch'><id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full</id><updated>2013-12-06T18:42:37.175Z</updated><category
-        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>Sheet1</title><link rel='alternate' type='text/html' href='https://spreadsheets.google.com/ccc?key=0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc'/><link
-        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full'/><link
-        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full'/><link
-        rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/batch'/><link
-        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full?min-col=1&amp;max-col=1&amp;return-empty=true&amp;max-row=2&amp;min-row=2'/><author><name>paul.jungwirth</name><email>paul.jungwirth@gmail.com</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>100</gs:rowCount><gs:colCount>20</gs:colCount><entry><id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C1</id><updated>2013-12-06T18:42:37.175Z</updated><category
-        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>A2</title><content type='text'>2x1</content><link rel='self' type='application/atom+xml'
-        href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C1'/><link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C1/2ijv'/><gs:cell
-        row='2' col='1' inputValue='2x1'>2x1</gs:cell></entry></feed>"
-    http_version: 
-  recorded_at: Fri, 06 Dec 2013 18:42:34 GMT
-- request:
-    method: post
-    uri: https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/batch
-    body:
-      encoding: UTF-8
-      string: |2
-                        <feed xmlns="http://www.w3.org/2005/Atom"
-                              xmlns:batch="http://schemas.google.com/gdata/batch"
-                              xmlns:gs="http://schemas.google.com/spreadsheets/2006">
-                          <id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full</id>
-                          <entry>
-                            <batch:id>2,1</batch:id>
-                            <batch:operation type="update"/>
-                            <id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C1</id>
-                            <link rel="edit" type="application/atom+xml"
-                              href="https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C1/2ijv"/>
-                            <gs:cell row="2" col="1" inputValue="2x1"/>
-                          </entry>
-                        </feed>
-    headers:
-      Authorization:
-      - GoogleLogin auth=DQAAAMwAAADMWltQuejlYd78Px9RfXhcHnb7tlPHfKPY4i69F9Hi0dhIQbyFRlHVcyMKaR3ajpn7yZLj-g3LYQk1SM-i9ejg3r4yH0rj9yZsBcy0ZiJV1L45w4jGXlgrvse68D5axixvDp7T7u6P6K-eOJj2SaKw8vBj156hBEyn4CQFJ0tVUjl5UPAN9Wt8hJmRNqULG3LoxYwLidLgPVjCtL-lF0YnUiSwbolVBzZAbyeYk1QSzX9xT5ms3sTQ4ESz42Bg9SQbc6kdlcWzvmQ_sO5GfrTY
-      Content-Type:
-      - application/atom+xml
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/atom+xml; charset=UTF-8
-      Gdata-Version:
-      - '1.0'
-      Set-Cookie:
-      - NID=67=glsIXLsUxvEjIZeV_caboBdJfweLOgsi15nO8M-4es2Wu32kx35phIfTTDp9ujhK_HyC8n1AeREHBwh3IH1Nmq4MovOypQI3q1XdTPWvPC7Q-3WfiUFQ-YljhIrbI8KE;Domain=.google.com;Path=/;Expires=Sat,
-        07-Jun-2014 18:42:38 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      Date:
-      - Fri, 06 Dec 2013 18:42:38 GMT
-      Expires:
-      - Fri, 06 Dec 2013 18:42:38 GMT
-      Cache-Control:
-      - private, max-age=0
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: "<?xml version='1.0' encoding='UTF-8'?><atom:feed xmlns:atom='http://www.w3.org/2005/Atom'
-        xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'
-        xmlns:batch='http://schemas.google.com/gdata/batch'><atom:id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/batch/1386355358339</atom:id><atom:updated>2013-12-06T18:42:38.351Z</atom:updated><atom:title
-        type='text'>Batch Feed</atom:title><atom:entry><atom:id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C1</atom:id><atom:updated>2013-12-06T18:42:38.344Z</atom:updated><atom:category
-        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><atom:title
-        type='text'>A2</atom:title><atom:content type='text'>2x1</atom:content><atom:link
-        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C1'/><atom:link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C1/2ijv'/><gs:cell
-        row='2' col='1' inputValue='2x1'>2x1</gs:cell><batch:id>2,1</batch:id><batch:status
-        code='200' reason='Success'/><batch:operation type='update'/></atom:entry></atom:feed>"
-    http_version: 
-  recorded_at: Fri, 06 Dec 2013 18:42:35 GMT
-- request:
-    method: get
-    uri: https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full?max-col=2&max-row=2&min-col=2&min-row=2&return-empty=true
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Authorization:
-      - GoogleLogin auth=DQAAAMwAAADMWltQuejlYd78Px9RfXhcHnb7tlPHfKPY4i69F9Hi0dhIQbyFRlHVcyMKaR3ajpn7yZLj-g3LYQk1SM-i9ejg3r4yH0rj9yZsBcy0ZiJV1L45w4jGXlgrvse68D5axixvDp7T7u6P6K-eOJj2SaKw8vBj156hBEyn4CQFJ0tVUjl5UPAN9Wt8hJmRNqULG3LoxYwLidLgPVjCtL-lF0YnUiSwbolVBzZAbyeYk1QSzX9xT5ms3sTQ4ESz42Bg9SQbc6kdlcWzvmQ_sO5GfrTY
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/atom+xml; charset=UTF-8
-      Expires:
-      - Fri, 06 Dec 2013 18:42:40 GMT
-      Date:
-      - Fri, 06 Dec 2013 18:42:40 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Vary:
-      - Accept, X-GData-Authorization, GData-Version
-      Gdata-Version:
-      - '1.0'
-      Last-Modified:
-      - Fri, 06 Dec 2013 18:42:38 GMT
-      Set-Cookie:
-      - NID=67=cQbD3pRJf1bzd_ftYzzrk1sCcdgkDT-b4GGscg8WBm-bIuyOYxIZL86VrMvC0wDSAjQeKiaH65AVd2Q_Ve5YxvWinnnZdg30pktLVmFxwHFkJ-pVnk0xtjyoM_QHg219;Domain=.google.com;Path=/;Expires=Sat,
-        07-Jun-2014 18:42:40 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
-        xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'
-        xmlns:batch='http://schemas.google.com/gdata/batch'><id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full</id><updated>2013-12-06T18:42:38.344Z</updated><category
-        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>Sheet1</title><link rel='alternate' type='text/html' href='https://spreadsheets.google.com/ccc?key=0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc'/><link
-        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full'/><link
-        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full'/><link
-        rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/batch'/><link
-        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full?min-col=2&amp;max-col=2&amp;return-empty=true&amp;max-row=2&amp;min-row=2'/><author><name>paul.jungwirth</name><email>paul.jungwirth@gmail.com</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>100</gs:rowCount><gs:colCount>20</gs:colCount><entry><id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C2</id><updated>2013-12-06T18:42:38.344Z</updated><category
-        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>B2</title><content type='text'>2x2</content><link rel='self' type='application/atom+xml'
-        href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C2'/><link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C2/a23xo'/><gs:cell
-        row='2' col='2' inputValue='2x2'>2x2</gs:cell></entry></feed>"
-    http_version: 
-  recorded_at: Fri, 06 Dec 2013 18:42:37 GMT
-- request:
-    method: post
-    uri: https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/batch
-    body:
-      encoding: UTF-8
-      string: |2
-                        <feed xmlns="http://www.w3.org/2005/Atom"
-                              xmlns:batch="http://schemas.google.com/gdata/batch"
-                              xmlns:gs="http://schemas.google.com/spreadsheets/2006">
-                          <id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full</id>
-                          <entry>
-                            <batch:id>2,2</batch:id>
-                            <batch:operation type="update"/>
-                            <id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C2</id>
-                            <link rel="edit" type="application/atom+xml"
-                              href="https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C2/a23xo"/>
-                            <gs:cell row="2" col="2" inputValue="2x2"/>
-                          </entry>
-                        </feed>
-    headers:
-      Authorization:
-      - GoogleLogin auth=DQAAAMwAAADMWltQuejlYd78Px9RfXhcHnb7tlPHfKPY4i69F9Hi0dhIQbyFRlHVcyMKaR3ajpn7yZLj-g3LYQk1SM-i9ejg3r4yH0rj9yZsBcy0ZiJV1L45w4jGXlgrvse68D5axixvDp7T7u6P6K-eOJj2SaKw8vBj156hBEyn4CQFJ0tVUjl5UPAN9Wt8hJmRNqULG3LoxYwLidLgPVjCtL-lF0YnUiSwbolVBzZAbyeYk1QSzX9xT5ms3sTQ4ESz42Bg9SQbc6kdlcWzvmQ_sO5GfrTY
-      Content-Type:
-      - application/atom+xml
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/atom+xml; charset=UTF-8
-      Gdata-Version:
-      - '1.0'
-      Set-Cookie:
-      - NID=67=O0n3ybyFFr3VP3s97FT61XHlZhk4M01SSuzeiYHZIy0xktykBbJeWQwthVsIRXZsU41IoB59PhzsYpjGc88JTzvOKlSeNHNahUXdz-Q3XUG26k7j3OJJTJMfCPt-hn1d;Domain=.google.com;Path=/;Expires=Sat,
-        07-Jun-2014 18:42:42 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      Date:
-      - Fri, 06 Dec 2013 18:42:42 GMT
-      Expires:
-      - Fri, 06 Dec 2013 18:42:42 GMT
-      Cache-Control:
-      - private, max-age=0
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: "<?xml version='1.0' encoding='UTF-8'?><atom:feed xmlns:atom='http://www.w3.org/2005/Atom'
-        xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'
-        xmlns:batch='http://schemas.google.com/gdata/batch'><atom:id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/batch/1386355362467</atom:id><atom:updated>2013-12-06T18:42:42.478Z</atom:updated><atom:title
-        type='text'>Batch Feed</atom:title><atom:entry><atom:id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C2</atom:id><atom:updated>2013-12-06T18:42:42.472Z</atom:updated><atom:category
-        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><atom:title
-        type='text'>B2</atom:title><atom:content type='text'>2x2</atom:content><atom:link
-        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C2'/><atom:link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R2C2/a23xo'/><gs:cell
-        row='2' col='2' inputValue='2x2'>2x2</gs:cell><batch:id>2,2</batch:id><batch:status
-        code='200' reason='Success'/><batch:operation type='update'/></atom:entry></atom:feed>"
-    http_version: 
-  recorded_at: Fri, 06 Dec 2013 18:42:39 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/drive/v2/files/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.2
-         (gzip)
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer ya29.RwGcl9xKPgBt_8T3Mdk2cD60d-ftZD_8KcGaVVfC6kq-3qpiYPxBpOJUt1TNjqs9Hak6CrdNn7IYDQ
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Tue, 31 Mar 2015 07:40:07 GMT
-      Date:
-      - Tue, 31 Mar 2015 07:40:07 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Etag:
-      - '"kW0QTl9xhM1BhWOCCIAuNhoeoK0/MTM4NjM1NTM2MjQ3Mg"'
       Vary:
       - Origin
       - X-Origin
@@ -590,945 +45,127 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAMVWW2/iOBR+769ArMRTSZxwR0KztHRnmSltmVJG250RMrFJ
-        DE7stR0CHfW/r+2EFmhX3T6MJooQHJ/Ldz6fCz9OSuUVSVC5WyojQdb4twWh
-        uHyqxcQKQZ9Mb/G6UwW8eoMupmJM0cVf3rCOBp+WU8ovxnerbE65CJLAmmEF
-        Q2P4rbz6CsYT2tlEI+8s+np9fj7sp1cRw+wzcEeTUf1qOfKuJiN/tBzXRuG3
-        sjWXmC4uSbIyLiKluOy6bpZlTshYSDHkRDoBi12L1V37roEr3XejhFRhkUCF
-        j2MhFsgimA0kucAQyQhj5QZB8GGFt733RKukkvcsWolWOUHxHKOfHpaliqeq
-        F6mYVoJIsBj3FpBKXMkICrHqKZEW1xyw5BiNlNQJpYKKBDnbGp35oEQql8Qw
-        1JQbu5nnzfaQzsy5w5PQOlZRGs8TSOhbuS4wRtJdqw8hsrAqBL0v13UPVGSv
-        P8LoKmF980y/cIGSASYZaqU0IbfoRl5/nD2c+YNBSGe3FfnQk74PcqBE6ZLX
-        AL8wVlJYKiuNSYwnW24PIOeUBJoOlrjrBBXgq1osnb38rR2Fc0yltvpxUtLl
-        rKAQ2HSSZf/UyCKCEE4OREpA7eFQTWgkggTqSLwmOLMiQ9VJ6dHEDDQErTfQ
-        HwauD7xa1fOroDnx2l3Q7vodx2vU7vO8GCIL8l/KdV+/Tr3l3xfJSDW1Ac+2
-        I7xn0qiCWrXmTUCrW2t1AXDqoFH4h2KF0Usjr9MCVeDpdwJA174OACA3WmMh
-        NblWD2hXnpVyKHCiDJd/f7eds+FMKFNOT/zu3wxHi7fLDLEsoQyi/Q6T7oX1
-        /P4uyxH9wUQMVc/EPz0GtamagmFQ6sHFOE40qjTWWR3Uza9EzZB8idpi1mg3
-        MV1YNVlliwUJ8GvwY+r8+jQ2VG7KRTukEosbLGIii6KypXK45vjzuc3+/62t
-        ZTpOrsfNj/RyOp2RIfP+rIW303tNzl2+v3ZrM8b5r5+/ztznTKS7CytYPtEM
-        y1jkMlUMM8POjql/Uqbg2VYPvTuJ831vO0/fExZXMMa2+Yz1DUxp6VOahBkR
-        KtL235/0djqG5WOabbBTe4CI5BRujVdzfuQw1+F63qUCF1emBamg+9TRqFFQ
-        ZxzrDaRMLRoGqxfrTnvZnGfzrO/2n57h8/fB0F1dfn6YRp3Bg89c2ay7PGKK
-        OUselk20xxwDkf1URdqvaQaM7kwGewNYg3wifJhT1vHa9brXagDfb/n1Rqde
-        axf54Fjvvz5CepYblvRES6mz3CX9e2iODXwT/7Hg1MzckRnSW5KEJvoBY/1D
-        zl5qv17uT/fw6jUcOX2TgxcUeDXfb3ZqjZYmotNoez7wvV2NYUQUnNt63Dko
-        B4xvC5lZY0aUCaL/kslzmNxGUOyfSPMb7Qn0pNJbBZ7n1y93jk8eT/4F0CRY
-        e88KAAA=
-    http_version: 
-  recorded_at: Tue, 31 Mar 2015 07:40:07 GMT
-- request:
-    method: get
-    uri: https://spreadsheets.google.com/feeds/worksheets/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/private/full
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.2
-         (gzip)
-      Gdata-Version:
-      - '3.0'
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer ya29.RwGcl9xKPgBt_8T3Mdk2cD60d-ftZD_8KcGaVVfC6kq-3qpiYPxBpOJUt1TNjqs9Hak6CrdNn7IYDQ
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/atom+xml; charset=UTF-8; type=feed
-      Expires:
-      - Tue, 31 Mar 2015 07:40:07 GMT
-      Date:
-      - Tue, 31 Mar 2015 07:40:07 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Vary:
-      - Accept, X-GData-Authorization, GData-Version
-      Gdata-Version:
-      - '3.0'
-      Etag:
-      - W/"D0QCQ3o8eit7ImA9Wh5VE0g."
-      Last-Modified:
-      - Fri, 06 Dec 2013 18:42:42 GMT
-      Content-Encoding:
-      - gzip
-      Set-Cookie:
-      - NID=67=d6UQ17wCvMKrvWxtw2t4yC8jJJC61TMTtM6yGl0f_bdD3lomvMFrUHFzJFRssZVkk68ZCNIyokf4JAyne-H3ltil8orlRAw5MZedHyw5GECdv-jZbaPGtx7Wo9AbNUui;Domain=.google.com;Path=/;Expires=Wed,
-        30-Sep-2015 07:40:07 GMT;HttpOnly
-      - NID=67=eKQmGMnR2Z0tbX2NbPVZug8Huoh44rGd1wmkpzZbjyDPjsbIAicIIYbADXfoPg3iz2JX9uXkJORqBPZ9U8F9vbtVfCiwg8x4SmV3yaMkNlE_UDzZi1VIrtOtaO5qbINK;Domain=.google.com;Path=/;Expires=Wed,
-        30-Sep-2015 07:40:07 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAMxVW0/bMBT+K5GQyMPUOCm3EtywAp3EHqaVS9F485zTxNSJ
-        je00Zb9+TrJeBqIjE0KVIkU+l+9859j+jE/nGXdmoDQTed8NPN91IKciZnnS
-        d29vvnR67mmEJwCxYyNz3XdTY2SIUFmWXrnnCZWgru8foIERmdvEhEJCfg1E
-        0XQZTo49KjLUQVoCRVWArgNQ4AVokZes4DVNISPaS4RIONS5WiogsU4BjK5q
-        Hi7T4k1pDT/XSeIQDLFd3aHdx0KYkwt/dD7aEz1g5ugyGxzfpQfjoZ94jdeN
-        MIujClZXuGu118GrwWhUCjX9w8sfsPE1zI47vux8j4djNeLx8EdwuR9ffH0Y
-        czkc3U7Ln1wqmlMkFZsRA2hScI6RLYcLGVtDHHX9YK8TdDv+4U3QC/e79vP2
-        j7r3GC0iMLW/RKgnp+4ZWk7OgMpapewsm3RRhA0zHKIrISyQNhg1a8xZPnUU
-        8L5LuK2QW4q21JO07AzMDUpNxl0nVTBpam8aLaX0dApP/TYTraitOPzrTOxU
-        u7fgR6TkzM7U3gNE7Fn+NH871fc7BS0bkEKbbW5AA59sHz9SmFSoCOckg0iS
-        gnsPRZ6UTJkUo9qI7bwZf+b7nFTGig9GjR+jBdRK8UIjDOFXoAtudBRg9Jpr
-        PUcbosxlHsP8WcaaA0Nu7G1fylgjU+Px/beLs4PhoBaxM3HmDz5QwER82Fq3
-        7DkIIWZm8aKE1vDKq3KErM/dALrC2go9vK6WwVINqciN3bQN5/+kdjUypBV9
-        60XgTJvWG/VfOvOybQqc6/cVzhryY/qZMV0Qzn41dG1DvZ2/TAPJ3qMv89j6
-        6dolmTypkfq2uW2XUfSCY3UNt5NjokMlynNR5CYKfB+jdUPlpYI3i27jXK6t
-        zleaa/8Vq+g3AAAA//8DAByw7qstCwAA
-    http_version: 
-  recorded_at: Tue, 31 Mar 2015 07:40:07 GMT
-- request:
-    method: get
-    uri: https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.2
-         (gzip)
-      Gdata-Version:
-      - '3.0'
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer ya29.RwGcl9xKPgBt_8T3Mdk2cD60d-ftZD_8KcGaVVfC6kq-3qpiYPxBpOJUt1TNjqs9Hak6CrdNn7IYDQ
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/atom+xml; charset=UTF-8; type=feed
-      Expires:
-      - Tue, 31 Mar 2015 07:40:07 GMT
-      Date:
-      - Tue, 31 Mar 2015 07:40:07 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Vary:
-      - Accept, X-GData-Authorization, GData-Version
-      Gdata-Version:
-      - '3.0'
-      Etag:
-      - W/"D0QCQ3o8eit7ImA9Wh5VE0g."
-      Last-Modified:
-      - Fri, 06 Dec 2013 18:42:42 GMT
-      Content-Encoding:
-      - gzip
-      Set-Cookie:
-      - NID=67=U-MCVZYuIiSYhfW0_nc3ocaBNg9seEtfQJDjJUQ6Dhg-jgtzuL5cJ235ghE-6qfOlnHp5fCgezHr8cWp4Z_JsMJr2REkI6xjCe4YpNwfJo0LbtGxduv-KoZDGotfTkHD;Domain=.google.com;Path=/;Expires=Wed,
-        30-Sep-2015 07:40:07 GMT;HttpOnly
-      - NID=67=wh1hRD3wSO5fslXtlSvXCrNMU8zvxsM3symjO9fkkpx6BVg8u4lcJlaRLc6aCiqtcG2UIHZy31Hk5ZAcMfGZGirHhaV-dHC0wNrOocmoVUJhPD2Pqm2v5R5Dad5DVgy-;Domain=.google.com;Path=/;Expires=Wed,
-        30-Sep-2015 07:40:07 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAOxWa2/aMBT9K5EqLR8m4sSlL2bS0ZZKVJpWSqHavrnJJUlx
-        4ix2Cvz72UkDtANWpImBVAkJxffh4+Oce0LOJzEzniETEU+apmPZpgGJx/0o
-        CZpm//66dmqeu2QI4BsqMxFNM5QybSA0Ho+t8aHFswBh2z5CLcljs8xp8BSS
-        HtDMC2fp9MzyeIxqSKTgIZ0gigTkWA6q6h6pXCgRXggxFVbAecCgKA98Kikq
-        0qqaQKwrEGkG1BchgBQa5/GszF+7T3Em0wj8BkiqmHhAn37lXH65sruX3UN+
-        CpE86cSts4fwaNC2A6uMmi6JfFe3Fbrvwt6LzTWZAnnAmEB2Kxr04PmsZqe1
-        W789yLrMb/9wOnX/6uZpwNJ2tz8aP7I08xLFmn+M0ix6phLQMGeMILUbyVNF
-        Cvgutp3DmoNr9vG9c9qoY/Wz6if4J0FVBvHUX8CzqVEcGTYkTkIWb1RyoM9o
-        IpfISDJwezriEFQ+ERYlIyMD1jQpU60ThU3tMU0VLAkTiUIZM9MIMxiWm66j
-        1PO88xFMm5vQqYHNMfztXTjQt1bho2nKIkWm0gyi6r3/PHk/1H92+xviT7mQ
-        +4z/RfQ7dICXOfTqGALYcKdAang0lyHPXJLQGNyU5sx6ypNgHGUyJKhYJIr0
-        iL2JfQ30ooZDUBknqGo1n/ANySVldyByJoVbJ2hVaLFGSJrJTuLDxHVeVSwE
-        SCAaGR9f8jyRrmPbBC0u6KjHWfmAy+DsmUAi1ZSbTe9yOsP0JrgdcGhHYnvz
-        +s65dDae0+rNaYAfycp0G2phhfGeIBUz1zSd9/rf8781n/0eTyToa52oteph
-        l2VU3ONrqWtSdxOjloJqZyixqE8601C6KP6jJM3lgLJcIVbMmyX9L9lK3IVq
-        VoinE1/Ih/7oe099+GxTPPhDPIVkLpaJB++PePAeiAevFA9+Kx5slvS/TzyF
-        8wQX365723Qe/OE8lfPgP8SD98d58B44D17iPHi582DtPHhD55n0H++n23Qe
-        /OE8lfMsE8/eOA/eA+fBS5wHL3cerJ0HL3WeApH7GwAA//8DAH2oyrjREwAA
-    http_version: 
-  recorded_at: Tue, 31 Mar 2015 07:40:08 GMT
-- request:
-    method: get
-    uri: https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full?max-col=1&max-row=1&min-col=1&min-row=1&return-empty=true
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.2
-         (gzip)
-      Gdata-Version:
-      - '3.0'
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer ya29.RwGcl9xKPgBt_8T3Mdk2cD60d-ftZD_8KcGaVVfC6kq-3qpiYPxBpOJUt1TNjqs9Hak6CrdNn7IYDQ
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/atom+xml; charset=UTF-8; type=feed
-      Expires:
-      - Tue, 31 Mar 2015 07:40:08 GMT
-      Date:
-      - Tue, 31 Mar 2015 07:40:08 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Vary:
-      - Accept, X-GData-Authorization, GData-Version
-      Gdata-Version:
-      - '3.0'
-      Etag:
-      - W/"D0QCQ3o8eit7ImA9Wh5VE0g."
-      Last-Modified:
-      - Fri, 06 Dec 2013 18:42:42 GMT
-      Content-Encoding:
-      - gzip
-      Set-Cookie:
-      - NID=67=O-EyPmNG23ujrdTsoZd7zAVB8nIfCdaT_mZMgA3JK79viE2-Pc832b76FpnctmBsvK9TGkNNuiGqaftK000YrUXGKff1HyIrzuZvQBdWA3vN-Xza1aAdvtNiEUNioP3t;Domain=.google.com;Path=/;Expires=Wed,
-        30-Sep-2015 07:40:08 GMT;HttpOnly
-      - NID=67=v5YeRuw0ooUeASAXGp89gThzeuPr0_oktEwTOb6mh4COq-vMMCYPiHLJVQbuqHBkYRTxyYYMEsaHJZFTz2-kZqA7MDZgf2HBafI1PupWSF6mUbSElqhXGMF2yAaF_7AW;Domain=.google.com;Path=/;Expires=Wed,
-        30-Sep-2015 07:40:08 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAANRV227bMAz9FQMF5ochlp3eXcVZ0GZA+9T0kmJ7U23GditL
-        mkQ3yd9PsptLCzRbgGHLAAMCxdvhkUnS/qzi3gtoU0rR86Mg9D0QqcxKkff8
-        +7uvnRO/n9AJQOZZS2F6foGoYkKm02kw3Q+kzkk3DA/JAGXltzaxVCBugem0
-        WJqz0yCVFekQoyAlzsA0BiQKIrLwe2S45mLSAipmglzKnEPjnmcMGWnMFj65
-        2eRglAaWmQIAjcN5tHTLNuZpavK9PIsBmWXigXz6UUs8uwhH56N9eQIlHl9W
-        g9OH4nA8DPOg1foJLbPEhTUu7lru9eCOTENS4NyQcFCOb+HltBOqznU2HOsR
-        z4bfosuD7OLqaczVcHT/PH3kSqfCspYdEaXLF4ZAJjXnlNhstFaWFMiSbhjt
-        d6JuJzy6i07ig679goPj7ndKFhY0tUcu9dxrSoYtiUPQ1VYue65GnyQUS+SQ
-        3DpNREkrUV6KZ08D7/mM29DCYrM55srCQpghKbDivldomLRJN1Gapmn/Gea9
-        beh0wFYYfvUv7LlXW+BjSvHSkml7hjD733+e/T7UP/b6W+JX0uD/jP+16Xeo
-        gNc59KYMA3yyUyD7VSk6qeS96BOr1FnFZmuSBqy16EClcN5DXcPSRsvpwsP6
-        N5IrlNVYSJ1QwSpIFKt58FSLfFpqLChpLql9vpK/033J3aUrjJJWT8ki1GpX
-        xCiR8RswNUeT2EHxkWrdxyDTeCkymL3zWFPQ3MS2hHNZC0yiMKRk/cJpLSWt
-        0G2VS5mCQDsvl3ugnfMwv8qvxxKGpfl7k/8mOo+2nvj2H4whK3GxvmN78cEK
-        PyZW528Iuor1rzfJYLVFUikQ3LPO7N1C2OWGbN7x7dBwpO4mRtcKNpznBoAf
-        +Z4bHe4shapxzHhtEVvm/Zb+V2vb3E3X2NMhSn4CAAD//wMAwxYprGQKAAA=
-    http_version: 
-  recorded_at: Tue, 31 Mar 2015 07:40:08 GMT
-- request:
-    method: post
-    uri: https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/batch
-    body:
-      encoding: UTF-8
-      string: |2
-                      <feed xmlns="http://www.w3.org/2005/Atom"
-                            xmlns:batch="http://schemas.google.com/gdata/batch"
-                            xmlns:gs="http://schemas.google.com/spreadsheets/2006">
-                        <id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full</id>
-                        <entry>
-                          <batch:id>1,1</batch:id>
-                          <batch:operation type="update"/>
-                          <id>https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/R1C1</id>
-                          <link rel="edit" type="application/atom+xml"
-                            href="https://spreadsheets.google.com/feeds/cells/0AiVSev9-0p-PdEVrQldEY1I4dDJjVlpEQUkwblprcnc/od6/private/full/R1C1"/>
-                          <gs:cell row="1" col="1" inputValue="1x1"/>
-                        </entry>
-                      </feed>
-    headers:
-      User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.2
-         (gzip)
-      Gdata-Version:
-      - '3.0'
-      Content-Type:
-      - application/atom+xml;charset=utf-8
-      If-Match:
-      - "*"
-      Accept-Encoding:
-      - gzip
-      Authorization:
-      - Bearer ya29.RwGcl9xKPgBt_8T3Mdk2cD60d-ftZD_8KcGaVVfC6kq-3qpiYPxBpOJUt1TNjqs9Hak6CrdNn7IYDQ
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/atom+xml; charset=UTF-8; type=feed
-      Gdata-Version:
-      - '3.0'
-      Content-Encoding:
-      - gzip
-      Set-Cookie:
-      - NID=67=joBLxZPgc4O5FY-jiH_aaCPgiCeLZ--s6zOwcYv8xDPLpjJXPaht6bmAobmHCkwmC_blzmz2r15aIL2jVu1PFN2xDjbwC40Hy0FxrDyJ3kjEJy3cNenlS0krIj8vC18o;Domain=.google.com;Path=/;Expires=Wed,
-        30-Sep-2015 07:40:08 GMT;HttpOnly
-      - NID=67=rRUOW_TPFLvc_2Okh93RsWMG4RclDqJfEeqonnRFHcXMILTAoXazhl3SU_K-A9IZXb9SbrPN45N1xpuRKYub7ko26dmyOWL3FkJchJW4uNpDM27ehuszXkXcXH5Z5-fO;Domain=.google.com;Path=/;Expires=Wed,
-        30-Sep-2015 07:40:08 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      Date:
-      - Tue, 31 Mar 2015 07:40:08 GMT
-      Expires:
-      - Tue, 31 Mar 2015 07:40:08 GMT
-      Cache-Control:
-      - private, max-age=0
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALWTUW/bIBSF/wpvvMwG4sRJLeKq21JpkyataxupfaNwa3t1
-        AAFOln8/cOooT3uY1CfL957j81245td/dj3ag/Od0WvMcooRaGlUp5s1fny4
-        zVb4uuavAApFpfZr3IZgK0IOh0N+KHLjGjKjdEFugtnhk6YyFvQ9CCfbs1xc
-        5dLsSEa8BUmSwI8CwnJGJt+LCBcWL1vYCZ83xjQ9jPZGiSDIKJs8jf+XwVsH
-        QvkWIPjEWeKad6pOBp8cF+1LW5rXEwl97wm96bb3sL/KqM1+qs3W3fVq88S+
-        zdXX77+3vd3cPb4dXnrrpI6DqfKER9h8tlyuliVdlcWMkxjKBxvxQdUzyhYZ
-        LbKCPdBlNacVXeXlYvHMyaTgoQs91J/Tl9BthOHkVOGggzt+/Ay/2Bf2n9Ab
-        54w780qjQ2Sun8yAlEHaBNSKPSBQXUBCSvAeBYNCC+hikBz9EG+xMjhAx+gU
-        8Wld3BrXH5EYolqHTqbUnJMpgo8HX0Vo9inCn9/e6z6IMHgUdxvWeE4LjGKc
-        T1v/YWyYTOGpLUL8x1A42ph/OrPUJ+83Ot5X/RfRXITfkAMAAA==
-    http_version: 
-  recorded_at: Tue, 31 Mar 2015 07:40:08 GMT
-- request:
-    method: post
-    uri: https://accounts.google.com/o/oauth2/token
-    body:
-      encoding: ASCII-8BIT
-      string: grant_type=
-    headers:
-      Cache-Control:
-      - no-store
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 400
-      message: Bad Request
-    headers:
-      Content-Type:
-      - application/json
-      Cache-Control:
-      - no-cache, no-store, max-age=0, must-revalidate
-      Pragma:
-      - no-cache
-      Expires:
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      Date:
-      - Thu, 09 Apr 2015 14:34:24 GMT
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
-      Accept-Ranges:
-      - none
-      Vary:
-      - Accept-Encoding
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: |-
+      string: |
         {
-          "error" : "invalid_request",
-          "error_description" : "Required parameter is missing: grant_type"
+         "kind": "drive#file",
+         "id": "1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4",
+         "name": "roo test",
+         "mimeType": "application/vnd.google-apps.spreadsheet",
+         "starred": false,
+         "trashed": false,
+         "explicitlyTrashed": false,
+         "parents": [
+          "0AEC7Rp-fqgWHUk9PVA"
+         ],
+         "spaces": [
+          "drive"
+         ],
+         "version": "63",
+         "webViewLink": "https://docs.google.com/spreadsheets/d/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/edit?usp=drivesdk",
+         "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.spreadsheet",
+         "hasThumbnail": true,
+         "thumbnailLink": "https://docs.google.com/a/staq.com/feeds/vt?gd=true&id=1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4&v=51&s=AMedNnoAAAAAXGxwqJVA0Ib9Q3DFwZx_FlM3mstPkFL7&sz=s220",
+         "thumbnailVersion": "51",
+         "viewedByMe": true,
+         "viewedByMeTime": "2019-02-19T19:09:11.438Z",
+         "createdTime": "2019-02-08T19:12:05.762Z",
+         "modifiedTime": "2019-02-19T19:09:11.438Z",
+         "modifiedByMeTime": "2019-02-19T19:09:11.438Z",
+         "modifiedByMe": true,
+         "owners": [
+          {
+           "kind": "drive#user",
+           "displayName": "Domenick Powers",
+           "me": true,
+           "permissionId": "09112192763485382395",
+           "emailAddress": "domenick@staq.com"
+          }
+         ],
+         "lastModifyingUser": {
+          "kind": "drive#user",
+          "displayName": "Domenick Powers",
+          "me": true,
+          "permissionId": "09112192763485382395",
+          "emailAddress": "domenick@staq.com"
+         },
+         "shared": false,
+         "ownedByMe": true,
+         "capabilities": {
+          "canAddChildren": false,
+          "canChangeCopyRequiresWriterPermission": true,
+          "canChangeViewersCanCopyContent": true,
+          "canComment": true,
+          "canCopy": true,
+          "canDelete": true,
+          "canDownload": true,
+          "canEdit": true,
+          "canListChildren": false,
+          "canMoveItemIntoTeamDrive": true,
+          "canReadRevisions": true,
+          "canRemoveChildren": false,
+          "canRename": true,
+          "canShare": true,
+          "canTrash": true,
+          "canUntrash": true
+         },
+         "viewersCanCopyContent": true,
+         "copyRequiresWriterPermission": false,
+         "writersCanShare": true,
+         "permissions": [
+          {
+           "kind": "drive#permission",
+           "id": "09112192763485382395",
+           "type": "user",
+           "emailAddress": "domenick@staq.com",
+           "role": "owner",
+           "displayName": "Domenick Powers",
+           "deleted": false
+          }
+         ],
+         "permissionIds": [
+          "09112192763485382395"
+         ],
+         "quotaBytesUsed": "0",
+         "isAppAuthorized": false,
+         "exportLinks": {
+          "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4&exportFormat=ods",
+          "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4&exportFormat=tsv",
+          "application/pdf": "https://docs.google.com/spreadsheets/export?id=1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4&exportFormat=pdf",
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4&exportFormat=xlsx",
+          "text/csv": "https://docs.google.com/spreadsheets/export?id=1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4&exportFormat=csv",
+          "application/zip": "https://docs.google.com/spreadsheets/export?id=1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4&exportFormat=zip",
+          "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4&exportFormat=ods"
+         }
         }
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:34:24 GMT
+  recorded_at: Tue, 19 Feb 2019 19:10:09 GMT
 - request:
     method: get
-    uri: https://www.googleapis.com/discovery/v1/apis/drive/v2/rest
+    uri: https://spreadsheets.google.com/feeds/worksheets/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/private/full
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
       Accept:
       - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Thu, 09 Apr 2015 14:46:15 GMT
-      Date:
-      - Thu, 09 Apr 2015 14:41:15 GMT
-      Etag:
-      - '"ye6orv2F-1npMW3u9suM3a7C5Bo/yUsYaOTyEAvpk-uZ9U5lffkz2VU"'
-      Vary:
-      - Origin
-      - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Encoding:
-      - gzip
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '14670'
-      Server:
-      - GSE
-      Age:
-      - '63'
-      Cache-Control:
-      - public, max-age=300, must-revalidate, no-transform
-      Alternate-Protocol:
-      - 443:quic,p=0.5
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        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
-        CMofnkJKxSH5LXTedHOgAHnwMINEtWTHAco8/EDlDlYqU1FomP7CyID6k030
-        MbpQBf1a9aFJpXXjUaZD86uc2SzMsIohpiw1byXROv7BrBH/UlIC/+Tsmvvb
-        01Jp9eFsPy7IOm3qsrDLuTyFR92Mr+Kreo3E3LhspFX+goriRrCKh+Ndd81l
-        dHpETQn17FKVLdykSWPML/FXdEZ41ENrDFDo5N1EcwmN4VWM6sK+52NTELPV
-        fB8o+Swph90uNy4xjt1OMgP2sv0c6nwlxYdD/CV2xKrcUvjpN76y6XR0Hskm
-        kGOdE6V4wJuTSC2OFJ3KUkI9/XMfpAMr6CVzwcjxYrwA5FA7PONI4VQAgEd6
-        xMNUKIG61ni3lMIaorbu5PXa9j4HF3S5EGUe8mjfW2IxCnyFiiSzTmOQV0nC
-        E+eLt8yWiCSvX72ynsMnKbaClJydUHr37SsDifUJvgzz1bzL8Oevlqd+863K
-        LqDaNwQ6hlCeo734f9QtSFM+JhCXFx9e/hvnJVDhImKmGFnKl7ianF4LZoiZ
-        pEgaA01jXKaOyjcNPR3VFTeolt4KeVujKe1Ci+Ci9le/0OHaEJPUmn2k8Lzn
-        e+mwk8o/b5yonm/UiS37UR/+MSsmZxoE3y1xFiulqAcjeUpybvqsxOnpbJ1s
-        s7Fgk/TWLNt0naoSfpqf+4UF+KNuHUPHl33Eayxrqz5OmHY+CQmYGl7bUoI4
-        zGTV8gzylSrmjTt/PfnUDc2L/scGnJiOH+UTNPIi/cqaK5oWPKOvhDYs+x6v
-        hTZAcB+3E7vV8hvCpqa9pdi0RRPeczOkW7jrNllm+YZuX9m9Giz4dUOQyY8V
-        mGswQdsQzSVBeaUBkSRUQQAM04VLSkyLsniB2WWtq0DPoV2owhxdp+Wp6JJO
-        ercE1p7Q6gfnn9H9TZyZAdZBqBV9q/a7cHWNPZSc2sO+yX2+97iP9csxlz4z
-        1/nVoL9mmPZr4pPlvUfdObk+gP0ZfgBJdpWgh5Q63er16QtMZuspdTmWakaD
-        SNXCr427jxzH3s3apUyLSRsHdorYjh6riaWZFz5laeK58qgp7jx6mzDUijOo
-        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
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:18 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/drive/v2/files/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
       Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Thu, 09 Apr 2015 14:42:18 GMT
+      - gzip,deflate
       Date:
-      - Thu, 09 Apr 2015 14:42:18 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Etag:
-      - '"28i-YUCcAhcv4gf_YBu5QxambJ8/MTQyODU5MDMzNzk3Mg"'
-      Vary:
-      - Origin
-      - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Encoding:
-      - gzip
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAMVWW2/aSBR+51cgVuIpYIO5S6hLQpNuutBAgJZsV2jwHJsp
-        Ho93ZswlVf77zowNISTNZaVukWWLM+fync/n4u+ZbG5JQpxrZXOYkxX85pEA
-        cidKTIzQ7qy632g9LnsDf4YvRHlAq18GIXM+d88n4/BS9C6qHz9/mdzchK4x
-        A4l8bfg1V26QwnR85nYW7qrie7PpaVwdbBCdXzas3miw/dQdV3vd3m3/dun0
-        /K85Yy4g8P4k4VK7WEgZiZZlrdfros+YHwCKiCi6jFoGq7UqWxqusN6MEgUS
-        eIgkHMfCzBVpMBNIRBwQFgsAabmu+24J2/ZbouVjEbUNWoGXCUF0Dvinh2Wx
-        jGLZXkga5N0FZxTaHgoE5NcE+yDbksfpa3ZZeIxGiKDoC4kkcRO2FTp9C4iQ
-        FqHIV5Rru1mpNDtAOtPnxSj0jWO5iOk8RCR4KVcPAAtrJd/52MDKE/y2XFdt
-        Oy/anR7gfsg6+je5RrwmPl1cTjeoMRo6vjwjN+XzvqBhPXrf+JYXt21RLtsJ
-        UCJVySuAQ8ayEoQ0UkoojLaROUBRFBBX0cFCaxXiFHxBiUXxIH9jF6A5BEJZ
-        fc9kVTlLxDnoTjLsn2jZgmAM4QOR5Eh5eKjGFRJOXHkkXhFYG5GmKpO90zFd
-        BUHpddVNwy3bpWrBdgpOaWTXWxW7VW4Wa6X6TZIXw8Qjx8qVgt0clSotp9Gq
-        1ovNevmh8um2B68yCJCQE4PwGRNHXUW7uQOE+BLwY6NSs24X7JK6RrbdMlfR
-        tu3EaAVcqLeh9WoVI4kQh1Bq4v9SNGnyjydbojEED9TTNdWfvR9zV/f1Nl42
-        ryad9PznDyQrhW79GESi8V9g/MgjEara5b6MsneZ7N9mOm0ixk2kfQ0fVn+E
-        vZdbGbN1GDCED6eYsN4bz2+fZAmic8Ypkm0d/+QY1Kagm5IhoUhgEYQKVUwV
-        Xw9681eiZlg8Rm0wK7QbGnhGTRSY5xEXnoJPg+KvT2MTiE0uHTmxAH4FnBKR
-        9qEplaOGuz832b/u06BS+3g9GDv9KIrwh8vFh+Ht9Go8qU9r02XyjbDrWZq0
-        8P/SoftMhLULy1myNRTfwBORTPeFJmdH1D8xk+h0q/bKWEAya8y8MmZ9RGE3
-        ssz6GcbzbS5tRaPx3EAzYZJ2xkREAdpqf7tNZlztmr0Ty4UqKV17gMfaLun8
-        dLzs0/sjQVh36lWnUanWmrWKU2vYjl1JXQFVG72DsdpOGppigfG5D/R3Xx9o
-        onMH00Svg57eIVsS+jrsUwAfaz1dTvt0n832hWRfn+vrUjXvGDCRaG7KIY2T
-        c1m0PRKtOVEfneIMhdcLNc8PToT+f7jm9aBQexCdsVCmW80cZe4y/wKydfhk
-        sgsAAA==
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:18 GMT
-- request:
-    method: get
-    uri: https://spreadsheets.google.com/feeds/worksheets/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/private/full
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
+      - Tue, 19 Feb 2019 19:10:09 GMT
       Gdata-Version:
       - '3.0'
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
       Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
+      Content-Type:
+      - application/x-www-form-urlencoded
   response:
     status:
       code: 200
@@ -1536,10 +173,12 @@ http_interactions:
     headers:
       Content-Type:
       - application/atom+xml; charset=UTF-8; type=feed
+      X-Robots-Tag:
+      - noindex, nofollow, nosnippet
       Expires:
-      - Thu, 09 Apr 2015 14:42:19 GMT
+      - Tue, 19 Feb 2019 19:10:01 GMT
       Date:
-      - Thu, 09 Apr 2015 14:42:19 GMT
+      - Tue, 19 Feb 2019 19:10:01 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Vary:
@@ -1547,21 +186,14 @@ http_interactions:
       Gdata-Version:
       - '3.0'
       Etag:
-      - W/"CkQHRnc8eit7ImA9XRRbFUQ."
+      - W/"CUQBQnc_cSt7ImA9XBNTFk0."
       Last-Modified:
-      - Thu, 09 Apr 2015 14:38:57 GMT
+      - Tue, 19 Feb 2019 19:09:13 GMT
       Content-Encoding:
       - gzip
-      Set-Cookie:
-      - NID=67=XMuEbWy1mufKS5VrSrbkRdyH1yKX3nG51pLP_wiJeCYaDzojyeGOw-c1i99ruUGNeMdrF86tf8HAVAYk3NTaRE81Oel9kyeVyI7TdDsNDiZQK9HEfzPXC7zcTV7rLH0e;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:19 GMT;HttpOnly
-      - NID=67=gjdQJrRLtR_wl6Ff_GdlcR_4fRD1xCpyvz578y2tq9FbWoWi4eQ6b-E_P7RkjtUVVW_2GjCTBZLbEcm63pb79lz1q52ASkEmSIq4JsSHgiTA9S4CutQOJmUQoZaZv3aY;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:19 GMT;HttpOnly
       P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -1570,54 +202,62 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
+      Set-Cookie:
+      - NID=160=EP6MUmx-guhvOjGzvmCk0qZUnAF-6ZHcJcA6OiAUQU09z6cOFscelvEb8rQclncObi4l3JvvRrSehFFZseFpk7wRKivyf2EOxmBpHysum8LqhbwPOFDe4MY1bnNoslTRXUNCEjhUsmeejvThtyfnJywpo3SHoAKGEKJD_8oBGpU;Domain=.google.com;Path=/;Expires=Wed,
+        21-Aug-2019 19:10:01 GMT;HttpOnly
+      - NID=160=ik935jI_pbq8KCsFway2QJmqf5SlS61WWWv4FaI_oji4UPseGIFCeJT3QdKdob8dsXJVR6shfvubqzds16nl9n7DzCOvDkLT1PrMt-cSQHgP3qYeFAx8dyi92_MOzgUz_9OiFhITHoNv_Ekeexi8QMRiFkUg1sTU0dz5bq9Xdas;Domain=.google.com;Path=/;Expires=Wed,
+        21-Aug-2019 19:10:01 GMT;HttpOnly
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAMxVW0/bMBT+K5WQyMPUOCmUtsEN60BcNvHQAi3qy2Sc0ySr
-        Ywfb6WW/fk6yXjZERyaE+mSd+3eOjz/js0XCajOQKha8a7m2Y9WAUxHEPOxa
-        D/eX9bZ15uMJQFAznlx1rUjr1ENoPp/b8yNbyBA1HKeJelokVunjiRT4HRBJ
-        o7U76dhUJKiOVAoU5Q6qcECu7aJVXLhJr2gECVF2KETIoIhVqQQSqAhAq7zm
-        yTos2BVW4rNqYeCBJqarETp8zoQ+PZ/2rwectiHWrZuk13kcDJ4uH/p2abV8
-        HAd+nlblebdqbyfPB6PQXMjpb1xOb3bxI2lljUk//B5cqUY/aT72uTgaXVwO
-        H/hXdXvV/DZ6HI7HnKJUxjOiAU0yxjAy5XCWBkYR+A3Hbdad47rTuXePvaO2
-        12zZnVZjjNHKA1NzhEIua0XPUHFyGmRSKeRg3aSFfKxjzcAfCGESKY1RKWMW
-        82lNAutahJkK3EA0pZapQadhoVGkE2bVIgmTsvau0VJKz6aw7FaZaA5tg+Ff
-        O3GQ394KH0lTFpuZmneAiNnlT4u3Q32/LajYQCqU3ucGFLDJ/uEjmY6E9DEn
-        CfhSCPkUQoJRIWIz6ZittZ/DXMwxYFRaMFqFb1jO00ITNgCVMa18F6PXTNsx
-        ShOpb3gAi78itgwYuDYvfE1dJTUNp7f0IhoPrwvi+pKOnNsPJC0RnFTmKnP3
-        HgSxXv0inlG88pO0kLFZO5Jucu0FB97lortmQCq4Npe2Y+dPC1NJPUrSty4/
-        i5WufFH/xS0v26bAmHpfsixSfkw/s1hlhMU/S7imofbBH6peGr9HX/q58nd1
-        SJL0tMjUNc3tO3WiFxjzZ7ifGEPlSTE/FxnXvus4GG0rcisVrBQapXEtG57P
-        OdecOSr/FwAAAP//AwCFLdmZIQsAAA==
+      encoding: UTF-8
+      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'
+        xmlns:gd='http://schemas.google.com/g/2005' gd:etag='W/&quot;CUQBQnc_cSt7ImA9XBNTFk0.&quot;'><id>https://spreadsheets.google.com/feeds/worksheets/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/private/full</id><updated>2019-02-19T19:09:13.949Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#worksheet'/><title>roo
+        test</title><link rel='alternate' type='application/atom+xml' href='https://docs.google.com/a/staq.com/spreadsheets/d/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/edit'/><link
+        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/private/full'/><link
+        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/private/full'/><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/private/full'/><author><name>domenick</name><email>domenick@staq.com</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><entry
+        gd:etag='&quot;IRwVABZJVyt7ImA.&quot;'><id>https://spreadsheets.google.com/feeds/worksheets/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#worksheet'/><title>Sheet1</title><content
+        type='application/atom+xml;type=feed' src='https://spreadsheets.google.com/feeds/list/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/spreadsheets/2006#cellsfeed' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/visualization/2008#visualizationApi' type='application/atom+xml'
+        href='https://docs.google.com/a/staq.com/spreadsheets/d/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/gviz/tq?gid=0'/><link
+        rel='http://schemas.google.com/spreadsheets/2006#exportcsv' type='text/csv'
+        href='https://docs.google.com/a/staq.com/spreadsheets/d/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/export?gid=0&amp;format=csv'/><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/private/full/od6'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/private/full/od6'/><gs:colCount>26</gs:colCount><gs:rowCount>1000</gs:rowCount></entry></feed>"
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:19 GMT
+  recorded_at: Tue, 19 Feb 2019 19:10:09 GMT
 - request:
     method: get
-    uri: https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full
+    uri: https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
-      Gdata-Version:
-      - '3.0'
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
       Accept:
       - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 19 Feb 2019 19:10:09 GMT
+      Gdata-Version:
+      - '3.0'
+      Authorization:
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Cookie:
+      - NID=160=EP6MUmx-guhvOjGzvmCk0qZUnAF-6ZHcJcA6OiAUQU09z6cOFscelvEb8rQclncObi4l3JvvRrSehFFZseFpk7wRKivyf2EOxmBpHysum8LqhbwPOFDe4MY1bnNoslTRXUNCEjhUsmeejvThtyfnJywpo3SHoAKGEKJD_8oBGpU
   response:
     status:
       code: 200
@@ -1625,10 +265,12 @@ http_interactions:
     headers:
       Content-Type:
       - application/atom+xml; charset=UTF-8; type=feed
+      X-Robots-Tag:
+      - noindex, nofollow, nosnippet
       Expires:
-      - Thu, 09 Apr 2015 14:42:19 GMT
+      - Tue, 19 Feb 2019 19:10:01 GMT
       Date:
-      - Thu, 09 Apr 2015 14:42:19 GMT
+      - Tue, 19 Feb 2019 19:10:01 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Vary:
@@ -1636,21 +278,13 @@ http_interactions:
       Gdata-Version:
       - '3.0'
       Etag:
-      - W/"CkQHRnc8eit7ImA9XRRbFUQ."
+      - W/"CUQBQnc_cSt7ImA9XBNTFk0."
       Last-Modified:
-      - Thu, 09 Apr 2015 14:38:57 GMT
+      - Tue, 19 Feb 2019 19:09:13 GMT
       Content-Encoding:
       - gzip
-      Set-Cookie:
-      - NID=67=LbWNqTL7HDRpYGuy5lHPanlESiyE-Sl2TF0rQ6Wdy4_lC0dCeptQi8QOB5yfgAUOtjwXtYmVaB0OIq9l2gjF4IE_hVwz2VrmoFIU9BxYdr2arYkG81NHih8IAtGVhZOI;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:19 GMT;HttpOnly
-      - NID=67=YK7AcgvUh725igZBDDd7WtH5PhItgwG6BqFjaGTZTBSHlIYYHCIGQnGZ8kd4eUhdBkAleqO7nx5KTH_PyCzs6SawKPN3cMwP2vOz6E5xELJ55LtkVdFPrexcH37Zp6p3;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:19 GMT;HttpOnly
       P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -1659,57 +293,217 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
+      Set-Cookie:
+      - NID=160=hBfNxqTykE6FpYndPhNloAUEtiWY2q1x3umM9RPy10qvtYrGuaRzC7lIpB3bWTR5AeQl29vSVVnOD1SqZ_yDWMMY7S9Vqm0ptao4JikfLS4LKHSPDv7IQxo7eYmuIZJXZWN-y5mUC3CDXdbxEGMUCWWDgkdxgKobk-WJejEZkMQ;Domain=.google.com;Path=/;Expires=Wed,
+        21-Aug-2019 19:10:01 GMT;HttpOnly
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAOxWXU/bMBT9K5GQloeJOjGUQuaG8bEymNDWlgLiZTLJbZrV
-        sbPYoe2/n52Qtmylo9LEWomn6Pp++Pja556Qw3HCrAfIZCx403Zrjm0BD0QY
-        86hp965a2/v2oU/6AKGlI7ls2gOlUg+h0WhUG+3URBYh7Dh1dKREYpcxnkiB
-        d4FmwWAaTg9qgUjQNpIpBMgEyCIAuTUXVXn3VM2lyGAACZW1SIiIQZEehVRR
-        VIRVOZFcliDTDGgoBwBKGpx707Rw6T7FmWwrCj1QVHfiBr37mQv14WTY/tzh
-        wT7EqnGeHB3cdjr3rV67Vnptn8Shb8pKU3du7/nippkSBcCYRM7Rw+mPpJHj
-        fjv6Hp5J3E7qt20udm5OW9c9fiEvz+pfbm6v7+647lq4h9IsfqAKUD9njCC9
-        G8lT3RQIfey49W1nd9s5uHJ3vZ19r96oHTTwHUFVBAn0JxLZxCqODCs2TkGW
-        rJSyZc5oI5+oWDHwu8bjElRahMV8aGXAmjZlujTX2PQek1TDUjBWaKASZluD
-        DPrlpstaGgTB4RAmzVXaaYDNMPztLWyZW6vw0TRlsW6m5gyi+t2/H78c6j+7
-        /RXxp0KqTcb/SPo1OsDjHHpyDAmsv1YgDTyaq4HIfMJpAn4mRHYfQUJQYRLd
-        7phNVz9GxjQQCCo9BFXps6nuKaEo64DMmZL+LkHPueZzpKKZOuchjH33Scac
-        g0TSy8ToRORc+a7jEDS/YLyBYKWBS+fUJsCVnmzTiV1OZJhcRN+uBXyK5evN
-        6I574q48m/Vr8SCMVSW0nl54RmwbSPvsJUVntf73zD+azftAcAXmWsd6rTLW
-        mTrFPT6lt2nqemI0VNDlLE0W/RtnW5oXxTfmaa6uKcs1Yt15u2z/Y7Qmd8Ga
-        Z8hznhyrm97wa1f/7LwmefAbeQrKHC8iD94c8uANIA9+ljz4d/Jgu2z/y8hT
-        KE90fNnqvqby4DflqZQH/0EevDnKgzdAefAC5cGLlQcb5cErKs+4d381eU3l
-        wW/KUynPIvJsjPLgDVAevEB58GLlwUZ58ELlKRD5vwAAAP//AwA6qvx/xRMA
-        AA==
+      encoding: UTF-8
+      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:batch='http://schemas.google.com/gdata/batch'
+        xmlns:gs='http://schemas.google.com/spreadsheets/2006' xmlns:gd='http://schemas.google.com/g/2005'
+        gd:etag='W/&quot;CUQBQnc_cSt7ImA9XBNTFk0.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full</id><updated>2019-02-19T19:09:13.949Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>Sheet1</title><link
+        rel='alternate' type='application/atom+xml' href='https://docs.google.com/a/staq.com/spreadsheets/d/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/edit'/><link
+        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/batch'/><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><author><name>domenick</name><email>domenick@staq.com</email></author><openSearch:totalResults>30</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>1000</gs:rowCount><gs:colCount>26</gs:colCount><entry
+        gd:etag='&quot;eyJgPVoeEis.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C1</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>A1</title><content>1x1</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C1'/><gs:cell
+        row='1' col='1' inputValue='1x1'>1x1</gs:cell></entry><entry gd:etag='&quot;ImBtWUkOSit7&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C2</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>B1</title><content>1x2</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C2'/><gs:cell
+        row='1' col='2' inputValue='1x2'>1x2</gs:cell></entry><entry gd:etag='&quot;YD0RUwhZTCt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C3</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>C1</title><content>Words</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C3'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C3'/><gs:cell
+        row='1' col='3' inputValue='Words'>Words</gs:cell></entry><entry gd:etag='&quot;YD5cV1oVGit7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C4</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>D1</title><content>Stuff</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C4'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C4'/><gs:cell
+        row='1' col='4' inputValue='Stuff'>Stuff</gs:cell></entry><entry gd:etag='&quot;YGMCH1oRSSt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C6</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>F1</title><content>7535</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C6'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C6'/><gs:cell
+        row='1' col='6' inputValue='=SUM(R[0]C[4],R[0]C[5])' numericValue='7535.0'>7535</gs:cell></entry><entry
+        gd:etag='&quot;YD4AUhkSHCt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C10</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>J1</title><content>3214</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C10'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C10'/><gs:cell
+        row='1' col='10' inputValue='3214' numericValue='3214.0'>3214</gs:cell></entry><entry
+        gd:etag='&quot;YD4aU1sXTyt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C11</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>K1</title><content>4321</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C11'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C11'/><gs:cell
+        row='1' col='11' inputValue='4321' numericValue='4321.0'>4321</gs:cell></entry><entry
+        gd:etag='&quot;eyJgPgBMFSs.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C1</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>A2</title><content>2x1</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C1'/><gs:cell
+        row='2' col='1' inputValue='2x1'>2x1</gs:cell></entry><entry gd:etag='&quot;ImBtWxUbTyt7&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C2</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>B2</title><content>2x2</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C2'/><gs:cell
+        row='2' col='2' inputValue='2x2'>2x2</gs:cell></entry><entry gd:etag='&quot;YGgdVgkYFyt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C3</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>C2</title><content>feqwfd</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C3'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C3'/><gs:cell
+        row='2' col='3' inputValue='feqwfd'>feqwfd</gs:cell></entry><entry gd:etag='&quot;YGsRRVBPByt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C4</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>D2</title><content>e32q2dewddd</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C4'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C4'/><gs:cell
+        row='2' col='4' inputValue='e32q2dewddd'>e32q2dewddd</gs:cell></entry><entry
+        gd:etag='&quot;YD0OFQ9PBCt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C6</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>F2</title><content>test</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C6'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C6'/><gs:cell
+        row='2' col='6' inputValue='test'>test</gs:cell></entry><entry gd:etag='&quot;YD0GFlFLHyt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C7</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>G2</title><content>4.5</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C7'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C7'/><gs:cell
+        row='2' col='7' inputValue='4.5' numericValue='4.5'>4.5</gs:cell></entry><entry
+        gd:etag='&quot;YGgNTlRCSSt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R3C1</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>A3</title><content>date
+        2</content><link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R3C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R3C1'/><gs:cell
+        row='3' col='1' inputValue='date 2'>date 2</gs:cell></entry><entry gd:etag='&quot;ImBtHRMNTyt7&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R3C2</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>B3</title><content>1324</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R3C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R3C2'/><gs:cell
+        row='3' col='2' inputValue='1324' numericValue='1324.0'>1324</gs:cell></entry><entry
+        gd:etag='&quot;YGgdUQdBEit7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R3C3</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>C3</title><content>ffdasf</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R3C3'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R3C3'/><gs:cell
+        row='3' col='3' inputValue='ffdasf'>ffdasf</gs:cell></entry><entry gd:etag='&quot;YHkDXhpMSit7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R3C4</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>D3</title><content>2dqd32qd32q</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R3C4'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R3C4'/><gs:cell
+        row='3' col='4' inputValue='2dqd32qd32q'>2dqd32qd32q</gs:cell></entry><entry
+        gd:etag='&quot;YGgNQBBRDSt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R4C1</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>A4</title><content>date
+        3</content><link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R4C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R4C1'/><gs:cell
+        row='4' col='1' inputValue='date 3'>date 3</gs:cell></entry><entry gd:etag='&quot;ImBtHRYCUSt7&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R4C2</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>B4</title><content>3214</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R4C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R4C2'/><gs:cell
+        row='4' col='2' inputValue='3214' numericValue='3214.0'>3214</gs:cell></entry><entry
+        gd:etag='&quot;YGgTSVpWEyt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R4C3</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>C4</title><content>dfafea</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R4C3'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R4C3'/><gs:cell
+        row='4' col='3' inputValue='dfafea'>dfafea</gs:cell></entry><entry gd:etag='&quot;YHlQVAgXFit7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R4C4</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>D4</title><content>2qd23d32qd</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R4C4'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R4C4'/><gs:cell
+        row='4' col='4' inputValue='2qd23d32qd'>2qd23d32qd</gs:cell></entry><entry
+        gd:etag='&quot;YDQeXldNHCt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R5C1</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>A5</title><content>21/11/1961</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R5C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R5C1'/><gs:cell
+        row='5' col='1' inputValue='21/11/1961'>21/11/1961</gs:cell></entry><entry
+        gd:etag='&quot;YHlYEAhJSSt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R5C2</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>B5</title><content>1/13/8313</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R5C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R5C2'/><gs:cell
+        row='5' col='2' inputValue='1/13/8313' numericValue='2342314.0'>1/13/8313</gs:cell></entry><entry
+        gd:etag='&quot;YG8GSw9OESt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R5C3</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>C5</title><content>ewfedsa</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R5C3'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R5C3'/><gs:cell
+        row='5' col='3' inputValue='ewfedsa'>ewfedsa</gs:cell></entry><entry gd:etag='&quot;YH0TXFQYGit7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R5C4</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>D5</title><content>q3d3q2d3dq2d</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R5C4'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R5C4'/><gs:cell
+        row='5' col='4' inputValue='q3d3q2d3dq2d'>q3d3q2d3dq2d</gs:cell></entry><entry
+        gd:etag='&quot;YGgHVFBKRSt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R7C1</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>A7</title><content>542544:00:00</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R7C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R7C1'/><gs:cell
+        row='7' col='1' inputValue='542544:00:00.000' numericValue='22606.0'>542544:00:00</gs:cell></entry><entry
+        gd:etag='&quot;YD4ZVARREyt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R12C5</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>E12</title><content>12/12/2014
+        12:12:00</content><link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R12C5'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R12C5'/><gs:cell
+        row='12' col='5' inputValue='12/12/2014 12:12:00' numericValue='41985.50833333333'>12/12/2014
+        12:12:00</gs:cell></entry><entry gd:etag='&quot;YGZaHgBVFSt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R17C3</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>C17</title><content>5/18/1903
+        0:00:00</content><link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R17C3'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R17C3'/><gs:cell
+        row='17' col='3' inputValue='5/18/1903 0:00:00' numericValue='1234.0'>5/18/1903
+        0:00:00</gs:cell></entry><entry gd:etag='&quot;YDgMFVFQDyt7Ig..&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R18C3</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>C18</title><content>12/12/2014
+        12:12:00</content><link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R18C3'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R18C3'/><gs:cell
+        row='18' col='3' inputValue='12/12/2014 12:12:00' numericValue='41985.50833333333'>12/12/2014
+        12:12:00</gs:cell></entry><entry gd:etag='&quot;ImB9HhIWTCt7&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R18C4</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>D18</title><content>13:46</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R18C4'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R18C4'/><gs:cell
+        row='18' col='4' inputValue='1:46:12 PM' numericValue='0.57375'>13:46</gs:cell></entry></feed>"
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:19 GMT
+  recorded_at: Tue, 19 Feb 2019 19:10:09 GMT
 - request:
     method: get
-    uri: https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full?max-col=1&max-row=1&min-col=1&min-row=1&return-empty=true
+    uri: https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full?max-col=1&max-row=1&min-col=1&min-row=1&return-empty=true
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
-      Gdata-Version:
-      - '3.0'
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
       Accept:
       - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 19 Feb 2019 19:10:10 GMT
+      Gdata-Version:
+      - '3.0'
+      Authorization:
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Cookie:
+      - NID=160=hBfNxqTykE6FpYndPhNloAUEtiWY2q1x3umM9RPy10qvtYrGuaRzC7lIpB3bWTR5AeQl29vSVVnOD1SqZ_yDWMMY7S9Vqm0ptao4JikfLS4LKHSPDv7IQxo7eYmuIZJXZWN-y5mUC3CDXdbxEGMUCWWDgkdxgKobk-WJejEZkMQ
   response:
     status:
       code: 200
@@ -1717,10 +511,12 @@ http_interactions:
     headers:
       Content-Type:
       - application/atom+xml; charset=UTF-8; type=feed
+      X-Robots-Tag:
+      - noindex, nofollow, nosnippet
       Expires:
-      - Thu, 09 Apr 2015 14:42:20 GMT
+      - Tue, 19 Feb 2019 19:10:02 GMT
       Date:
-      - Thu, 09 Apr 2015 14:42:20 GMT
+      - Tue, 19 Feb 2019 19:10:02 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Vary:
@@ -1728,21 +524,11 @@ http_interactions:
       Gdata-Version:
       - '3.0'
       Etag:
-      - W/"CkQHRnc8eit7ImA9XRRbFUQ."
+      - W/"CUQBQnc_cSt7ImA9XBNTFk0."
       Last-Modified:
-      - Thu, 09 Apr 2015 14:38:57 GMT
+      - Tue, 19 Feb 2019 19:09:13 GMT
       Content-Encoding:
       - gzip
-      Set-Cookie:
-      - NID=67=I_SZyS1pD9aHqyKzjad9r3dpb1lPZL1-bqGzwN-ch52DWu3PnLADEoY-qhVHgZ6VAIyxOmMWdxOjr4PpwsXDauGc71TIjP5EbrGQhwIl8hB-42WTSLAE9BSN3x7vyfor;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:20 GMT;HttpOnly
-      - NID=67=UB3r4OwUiuvG9wyLd_FWIM7NEB91NhPDfasUY0vQHj_YwUUSDc5aONY2tnKprN1qNuLCc22I_nNJinLtJDr1y5JskBYGK2eWlIaEvSZ1cZTq3tlaBSStDmeKPBDluaHP;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:20 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -1751,70 +537,73 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAANRVbU/bMBD+K5GQyIepcVIopcFNV8FgME1aCxTEl8kk1zTD
-        sTP7Qtt/PzuhL0yiW6Vp6z5Z57vn/Nxj35n2Zjl3nkHpTIquG3i+64CIZZKJ
-        tOve3pw3jt1eRMcAiWMihe66E8QiJGQ6nXrTA0+qlDR9v0X6KHO3jgllAeIa
-        mIony3DW8WKZkwbRBcTEBugqgAReQBa4R4ZrEB1PIGfaS6VMOVTwNGHISBW2
-        wKR6E0AXCliiJwCoLc+jJSzZeE5Vk+ukSQjIjBJ3ZP97KfHk9GnwcSjiY8iw
-        fZn3O/fD4eP57cCrvW5EsySyabXNu3b2enIrpiYxcK6J338++5a3y+Z4kH5N
-        LnRzkLfuB0Ie3J2dj27Flf580fp0dz96eBBGteSIFCp7ZghkXHJOiTmNloUR
-        BZKo6Qethn/Y8Ds3wWF4cBy22l6n3XygZBFBY7OkUs2dqmTYUjgElW8F2bM1
-        uiSimCGH6Np6Akpqi/JMPDkKeNdl3KQWhps5Y14YWggzJBPMuetMFIzrQzdJ
-        Gsdx7wnm3W3ktMRWHH71FvbsrS34saLgmRHT9Axh5t2/m/0+1T92+1vyL6TG
-        /5n/S9PvUAEvc+hVGRr4eKdI9vJMNGLJu8E+y4uTnM3WLAVYKtGAvMB5F1UJ
-        yxglpwuEwVeWLZSVOJEqooLlECkp1WMKOSWVSc3FZXy5+z61pi2GktpDyQK+
-        +h9ClMj4EHTJUUdmOLzlWsdoZAovRQKznxBrDprq0NA+laXAKPB9StY3rNfI
-        UBvN2rm0KQg0M3I5++vZDvOr9MtIwodM/71pPwxOg62nvHl3ISQZLr7s0Gy8
-        8W23ifG5G5Kucv3r36O/+jliKRDstc7M3sLY5Sas7vH1oLCi7iZH2womnWOb
-        3g1cx44Lu2aiKHHEeGkYG+XdWv6XaNPcVdeY1TKKfgAAAP//AwD0sEj8WAoA
-        AA==
+      encoding: UTF-8
+      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:batch='http://schemas.google.com/gdata/batch'
+        xmlns:gs='http://schemas.google.com/spreadsheets/2006' xmlns:gd='http://schemas.google.com/g/2005'
+        gd:etag='W/&quot;CUQBQnc_cSt7ImA9XBNTFk0.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full</id><updated>2019-02-19T19:09:13.949Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>Sheet1</title><link
+        rel='alternate' type='application/atom+xml' href='https://docs.google.com/a/staq.com/spreadsheets/d/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/edit'/><link
+        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/batch'/><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full?return-empty=true&amp;min-row=1&amp;max-col=1&amp;min-col=1&amp;max-row=1'/><author><name>domenick</name><email>domenick@staq.com</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>1000</gs:rowCount><gs:colCount>26</gs:colCount><entry
+        gd:etag='&quot;eyJgPVoeEis.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C1</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>A1</title><content>1x1</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C1'/><gs:cell
+        row='1' col='1' inputValue='1x1'>1x1</gs:cell></entry></feed>"
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:20 GMT
+  recorded_at: Tue, 19 Feb 2019 19:10:10 GMT
 - request:
     method: post
-    uri: https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full/batch
+    uri: https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/batch
     body:
       encoding: UTF-8
       string: |2
                       <feed xmlns="http://www.w3.org/2005/Atom"
                             xmlns:batch="http://schemas.google.com/gdata/batch"
                             xmlns:gs="http://schemas.google.com/spreadsheets/2006">
-                        <id>https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full</id>
+                        <id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full</id>
                         <entry>
                           <batch:id>1,1</batch:id>
                           <batch:operation type="update"/>
-                          <id>https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/R1C1</id>
-                          <link rel="edit" type="application/atom+xml"
-                            href="https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full/R1C1"/>
-                          <gs:cell row="1" col="1" inputValue="1x1"/>
+                          <id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C1</id>
+                          <link
+                            rel="edit"
+                            type="application/atom+xml"
+                            href="https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C1"/>
+                          <gs:cell
+                            row="1"
+                            col="1"
+                            inputValue="1x1"/>
                         </entry>
-                      </feed>
+                  </feed>
     headers:
       User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 19 Feb 2019 19:10:10 GMT
       Gdata-Version:
       - '3.0'
       Content-Type:
       - application/atom+xml;charset=utf-8
       If-Match:
       - "*"
-      Accept-Encoding:
-      - gzip
       Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
+      Cookie:
+      - NID=160=hBfNxqTykE6FpYndPhNloAUEtiWY2q1x3umM9RPy10qvtYrGuaRzC7lIpB3bWTR5AeQl29vSVVnOD1SqZ_yDWMMY7S9Vqm0ptao4JikfLS4LKHSPDv7IQxo7eYmuIZJXZWN-y5mUC3CDXdbxEGMUCWWDgkdxgKobk-WJejEZkMQ
   response:
     status:
       code: 200
@@ -1822,24 +611,16 @@ http_interactions:
     headers:
       Content-Type:
       - application/atom+xml; charset=UTF-8; type=feed
+      X-Robots-Tag:
+      - noindex, nofollow, nosnippet
       Gdata-Version:
       - '3.0'
       Content-Encoding:
       - gzip
-      Set-Cookie:
-      - NID=67=ABmnCnyoz0sMB9sMEyeT61WQWD340yfjf7nBiXSi-yEIDnFU8-3S08HYp949wcr0vIpE5J9584N5NaipiDNOMiD7L1yyiYEmpzT73_IiF0VHbNpKy-niNRR7-5KF4eym;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:21 GMT;HttpOnly
-      - NID=67=iEzNeGw804o1gwkshNDq2p59DGtY9tq7o0o43T65aARMgNTkPVZ5y2lB5RW4mv-7idrmgCnHgPxFifidbLAM-QyQRc0LpK8MR8Zz_pmjOEraPpRSMN-dns5sByLJVuFo;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:21 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
       Date:
-      - Thu, 09 Apr 2015 14:42:21 GMT
+      - Tue, 19 Feb 2019 19:10:02 GMT
       Expires:
-      - Thu, 09 Apr 2015 14:42:21 GMT
+      - Tue, 19 Feb 2019 19:10:02 GMT
       Cache-Control:
       - private, max-age=0
       X-Content-Type-Options:
@@ -1850,51 +631,48 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAM1UUW/TMBD+K5GQ8AM0jtNkW0KaqTA2aRMSZVs39QWZ5JoG
-        HDvETrv+e85J0/WFoj2AeLJ8/r7zd9+dnZw/VcJZQ6NLJSeEuR5xQGYqL2Ux
-        Ifd3l6Mzcp4mS4DcQaTUE7Iypo4p3Ww27mbsqqagvueFdGpURXpMrGqQt8Cb
-        bLWH88jNVEVHVNeQUQvQHYAyl9GB942bA4rOVlBx7RZKFQI6epFzw2kHGziF
-        PkbQdQM81ysAo63OE5ImZZ5agraMg+NDmq1X0wyE0NSbri++V6etv5wVX/Mr
-        7c+q8HEm1fjh4nJ+L6/1p6vw5uFxvlhILCw/6eVRFvhnYeSFgRexIKF4adLW
-        KB/y1PdYOPKCkRfdsSAO/NhHE9h4kdABkZjSCEjf20zOJYpJaB9JQJpmO5Se
-        H/Wq6wtxijwGw7Gbr3+2yryD7XXxea7gY6ndPvIPLPnCPrA/eeC5kR8desDr
-        Ooa8NMPoxRj4zfidUjwjR5I+50qTDNMXCl3sTIOXjY9joKleRHllPSN06OmU
-        7XuZKWmwnyl7wtiwSUQpfzgNiAnRIJZ44bZGjViAKFE5PlPK8am9QUuIs2pg
-        2Yv5a62rm3KNhtFlK0TXR1vKs0Zr6v+psdCxTec0aoMfG3EyJbq1lHVr5ly0
-        qBidJ739O3SadK83xlFlbzG83+3i2nDTasyVIxu7S9AFru3XedtmGWhtb+6h
-        +Mc1nRc7d/q5tue0e8S42qLTXx4nmfuDBQAA
+      encoding: UTF-8
+      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:batch='http://schemas.google.com/gdata/batch'
+        xmlns:gs='http://schemas.google.com/spreadsheets/2006'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/batch/1550603402473</id><updated>2019-02-19T19:10:02.498Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>Batch
+        Feed</title><entry xmlns:gd='http://schemas.google.com/g/2005' gd:etag='&quot;eyJgPVoeEis.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C1</id><updated>2019-02-19T19:09:13.949Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:09:13.949Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>A1</title><content>1x1</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C1'/><gs:cell
+        row='1' col='1' inputValue='1x1'>1x1</gs:cell><batch:id>1,1</batch:id><batch:status
+        code='200' reason='Success'/><batch:operation type='update'/></entry></feed>"
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:21 GMT
+  recorded_at: Tue, 19 Feb 2019 19:10:11 GMT
 - request:
     method: get
-    uri: https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full?max-col=2&max-row=1&min-col=2&min-row=1&return-empty=true
+    uri: https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full?max-col=2&max-row=1&min-col=2&min-row=1&return-empty=true
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
-      Gdata-Version:
-      - '3.0'
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
       Accept:
       - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 19 Feb 2019 19:10:11 GMT
+      Gdata-Version:
+      - '3.0'
+      Authorization:
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Cookie:
+      - NID=160=hBfNxqTykE6FpYndPhNloAUEtiWY2q1x3umM9RPy10qvtYrGuaRzC7lIpB3bWTR5AeQl29vSVVnOD1SqZ_yDWMMY7S9Vqm0ptao4JikfLS4LKHSPDv7IQxo7eYmuIZJXZWN-y5mUC3CDXdbxEGMUCWWDgkdxgKobk-WJejEZkMQ
   response:
     status:
       code: 200
@@ -1902,10 +680,12 @@ http_interactions:
     headers:
       Content-Type:
       - application/atom+xml; charset=UTF-8; type=feed
+      X-Robots-Tag:
+      - noindex, nofollow, nosnippet
       Expires:
-      - Thu, 09 Apr 2015 14:42:21 GMT
+      - Tue, 19 Feb 2019 19:10:02 GMT
       Date:
-      - Thu, 09 Apr 2015 14:42:21 GMT
+      - Tue, 19 Feb 2019 19:10:02 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Vary:
@@ -1913,21 +693,11 @@ http_interactions:
       Gdata-Version:
       - '3.0'
       Etag:
-      - W/"CkIAQXc5cSt7ImA9XRRbFUQ."
+      - W/"CUMEQ3ozeSt7ImA9XBNTFk0."
       Last-Modified:
-      - Thu, 09 Apr 2015 14:42:20 GMT
+      - Tue, 19 Feb 2019 19:10:02 GMT
       Content-Encoding:
       - gzip
-      Set-Cookie:
-      - NID=67=hhiSScA5Is9hLqe_s8iln-BziDQpZBHeVrKmH7TgKrk7eHMC3ihQ4Cwyd1aimmcPkKPwl1EdnzAsEdszT1H3xZGcTW7JfeMDESGRUQbNfMo_LbBCsZ-yAxP8r30gz7Ng;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:21 GMT;HttpOnly
-      - NID=67=v-q-S77dkVHtTeWzir9da9U6GaVbjE2RQejkKfc2Y0zCUrg81XKpwrfX3QfUeNbshwkxt5pe01lqMcVryL9nbG-RfLpFD20qb1YTeY3OsEXiS3xdqwdU8K1NySEzJzWm;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:21 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -1936,70 +706,73 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAANRVbU/bMBD+K5GQ8IepdRIorMFNx4tAbJqmUgoVXyaTXNMM
-        x87sCy3/fnZCX5gEW6Vp6z5Z57vn/Nxj35n154XwHkGbXMkeCdo+8UAmKs1l
-        1iOj6/PWe9KP2QQg9WykND0yRSwjSmezWXu211Y6o6Hvd+gxqoI0MZEqQQ6B
-        62S6DOfddqIK2qKmhIS6AFMH0KAd0AXunuMaxCRTKLhpZ0plAmp4lnLktA5b
-        YDLzFsCUGnhqpgBoHM+DJSx985y6JuJlaQTIrRK3dPd7pfDo9OHyeDBOOskQ
-        Dy+L4+746ur+fDRoN14SszyNXVrj8q6dvZ7ciWloAkIY6h8/nn0rDqtwMsi+
-        phcmHBSd8UCqvduz85uR/Gg+X3Q+3Y5v7u6kVS09oKXOHzkCnVRCMGpPY1Vp
-        RYE0Dv2g0/L3W373OtiP9sMo9NvdsHvH6CKCJXbJlH7y6pJhQ+EQdLERZMfV
-        SGjMMEcB8dB5AkYbi4lcPngaRI9wYVNLy82e8VRaWghzpFMsBPGmGibNoW9J
-        miRJ/wGeepvI6YitOPzqLey4W1vw42Upcium7RnK7bt/N/99qn/s9jfkXyqD
-        /zP/56bfogKe59CLMgyIyVaR7Be5bCVK9MJdXpRHBZ+vWRqw0rIFRYlPPdQV
-        LGO0mvWCxrL42nKF8gqnSsdM8gJirZS+z6BgtDaZvbhcLHc/ZM50xTDaeBhd
-        wFf/Q4QKubgCUwk0sR0Or7nWMQa5xkuZwvwnxJqDZSaytE9VJTEOfJ/R9Q3n
-        tTI0Rtg4lzYDiXZGLmd/M9svixO8HT18GeZ4+Nem/VVwGm485e27iyDNcfFl
-        R3bjlW/7kFofeSPpKte//j1OVj9HoiSCu9a5FWdhbHMT1vf4clA4UbeTo2sF
-        m85zTU8C4rlxQULi5bKs8IaLyjK2ypNG/udo29x119jVMYp/AAAA//8DAAu6
-        Ek1YCgAA
+      encoding: UTF-8
+      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:batch='http://schemas.google.com/gdata/batch'
+        xmlns:gs='http://schemas.google.com/spreadsheets/2006' xmlns:gd='http://schemas.google.com/g/2005'
+        gd:etag='W/&quot;CUMEQ3ozeSt7ImA9XBNTFk0.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full</id><updated>2019-02-19T19:10:02.481Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>Sheet1</title><link
+        rel='alternate' type='application/atom+xml' href='https://docs.google.com/a/staq.com/spreadsheets/d/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/edit'/><link
+        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/batch'/><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full?return-empty=true&amp;min-row=1&amp;max-col=2&amp;min-col=2&amp;max-row=1'/><author><name>domenick</name><email>domenick@staq.com</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>1000</gs:rowCount><gs:colCount>26</gs:colCount><entry
+        gd:etag='&quot;ImBtWUkOSit7&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C2</id><updated>2019-02-19T19:10:02.481Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:10:02.481Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>B1</title><content>1x2</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C2'/><gs:cell
+        row='1' col='2' inputValue='1x2'>1x2</gs:cell></entry></feed>"
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:21 GMT
+  recorded_at: Tue, 19 Feb 2019 19:10:11 GMT
 - request:
     method: post
-    uri: https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full/batch
+    uri: https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/batch
     body:
       encoding: UTF-8
       string: |2
                       <feed xmlns="http://www.w3.org/2005/Atom"
                             xmlns:batch="http://schemas.google.com/gdata/batch"
                             xmlns:gs="http://schemas.google.com/spreadsheets/2006">
-                        <id>https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full</id>
+                        <id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full</id>
                         <entry>
                           <batch:id>1,2</batch:id>
                           <batch:operation type="update"/>
-                          <id>https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/R1C2</id>
-                          <link rel="edit" type="application/atom+xml"
-                            href="https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full/R1C2"/>
-                          <gs:cell row="1" col="2" inputValue="1x2"/>
+                          <id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C2</id>
+                          <link
+                            rel="edit"
+                            type="application/atom+xml"
+                            href="https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C2"/>
+                          <gs:cell
+                            row="1"
+                            col="2"
+                            inputValue="1x2"/>
                         </entry>
-                      </feed>
+                  </feed>
     headers:
       User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 19 Feb 2019 19:10:11 GMT
       Gdata-Version:
       - '3.0'
       Content-Type:
       - application/atom+xml;charset=utf-8
       If-Match:
       - "*"
-      Accept-Encoding:
-      - gzip
       Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
+      Cookie:
+      - NID=160=hBfNxqTykE6FpYndPhNloAUEtiWY2q1x3umM9RPy10qvtYrGuaRzC7lIpB3bWTR5AeQl29vSVVnOD1SqZ_yDWMMY7S9Vqm0ptao4JikfLS4LKHSPDv7IQxo7eYmuIZJXZWN-y5mUC3CDXdbxEGMUCWWDgkdxgKobk-WJejEZkMQ
   response:
     status:
       code: 200
@@ -2007,24 +780,16 @@ http_interactions:
     headers:
       Content-Type:
       - application/atom+xml; charset=UTF-8; type=feed
+      X-Robots-Tag:
+      - noindex, nofollow, nosnippet
       Gdata-Version:
       - '3.0'
       Content-Encoding:
       - gzip
-      Set-Cookie:
-      - NID=67=klNIbgh4uViBtUOU947cQLIwimJHp4yo6gZMzAbO-ERCzaipObb3j7Q7Dptegc0yTAXVTwWdUgwzcFroaiN2WvbUXdJDZK4d84r9-8ci4SG3riKCybfo6SuedDwaAmfG;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:22 GMT;HttpOnly
-      - NID=67=tFKyNEluHCDHCP5uyuz84HssVnjdJwW7SMzN_0KEaZBC6ax2u1iboggGx1e0SjW5FPlIz8s_y3DSg_h8TZMSUs5P1OH0DRJ6UiOmz0Ap7fr6hbYQsJwNwv9fokAtTbOv;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:22 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
       Date:
-      - Thu, 09 Apr 2015 14:42:22 GMT
+      - Tue, 19 Feb 2019 19:10:03 GMT
       Expires:
-      - Thu, 09 Apr 2015 14:42:22 GMT
+      - Tue, 19 Feb 2019 19:10:03 GMT
       Cache-Control:
       - private, max-age=0
       X-Content-Type-Options:
@@ -2035,51 +800,48 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAM1UUW/TMBD+K5GQ8AM0jr1mbYObaWPqBAih0rWd+oJM7KZh
-        jh1ip93+Pedk7fpCxR5APEU5f9/5u+/uzC4eShVsZW0Lo8eIhBEKpM6MKHQ+
-        RvPbSW+ILlK2llIEgNR2jDbOVQnGu90u3J2Fps4xjaIYXzpTog6TmErqmeR1
-        tjnA+SjMTIl72FYywx5gWwAmIcF73nfujig228iS2zA3JleypeeCO45b2J6T
-        21MEW9WSC7uR0lmv8xylrBCpJ1jPODo+pvl6Lc6kUhZHl9vrH+Wgoetp/k3c
-        WDot47upNmfL68lirj/azzfxp+XdYrXSUJg47+Rh0qfDeBTFfUqiIcNwKWsq
-        kC9FSiMS96J+Lxrdkn7SpwmlIYmjFcN7BHOFUzK98pmCCYhhuIswqV39uC9d
-        nPSq7QsKcpFIx6Gbr382xr37UF655fz+y6xwgy7yDyz5St7TP/CAkmMPeFUl
-        UhRuP3oJBH4zfgMMZ+hE0udcKcsgfW7AxdY0+bLxCZysyxdRXnnPED70lBx6
-        mRntoJ8peQBz9j9MFfo+qKUaIyvVGi58rEAjFKAKUA5rijms2huwBAWbWq47
-        MX+tdVVdbMEwvG6UavvoS3nW6E39PzXmNvHpgtrs4GFDQWZALkVBoavGLbhq
-        QDE4jzr7n9Apa7c3gVElbyF8+HuKW8ddYyGXADZ0F4EL3Pqnc9ZkmbTW39xB
-        4Y2rWy+e3Onm2p/jdonh64tOfwFrZ22OgwUAAA==
+      encoding: UTF-8
+      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:batch='http://schemas.google.com/gdata/batch'
+        xmlns:gs='http://schemas.google.com/spreadsheets/2006'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/batch/1550603403259</id><updated>2019-02-19T19:10:03.279Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>Batch
+        Feed</title><entry xmlns:gd='http://schemas.google.com/g/2005' gd:etag='&quot;ImBtWUkOSit7&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R1C2</id><updated>2019-02-19T19:10:02.481Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:10:02.481Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>B1</title><content>1x2</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R1C2'/><gs:cell
+        row='1' col='2' inputValue='1x2'>1x2</gs:cell><batch:id>1,2</batch:id><batch:status
+        code='200' reason='Success'/><batch:operation type='update'/></entry></feed>"
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:22 GMT
+  recorded_at: Tue, 19 Feb 2019 19:10:11 GMT
 - request:
     method: get
-    uri: https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full?max-col=1&max-row=2&min-col=1&min-row=2&return-empty=true
+    uri: https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full?max-col=1&max-row=2&min-col=1&min-row=2&return-empty=true
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
-      Gdata-Version:
-      - '3.0'
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
       Accept:
       - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 19 Feb 2019 19:10:11 GMT
+      Gdata-Version:
+      - '3.0'
+      Authorization:
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Cookie:
+      - NID=160=hBfNxqTykE6FpYndPhNloAUEtiWY2q1x3umM9RPy10qvtYrGuaRzC7lIpB3bWTR5AeQl29vSVVnOD1SqZ_yDWMMY7S9Vqm0ptao4JikfLS4LKHSPDv7IQxo7eYmuIZJXZWN-y5mUC3CDXdbxEGMUCWWDgkdxgKobk-WJejEZkMQ
   response:
     status:
       code: 200
@@ -2087,10 +849,12 @@ http_interactions:
     headers:
       Content-Type:
       - application/atom+xml; charset=UTF-8; type=feed
+      X-Robots-Tag:
+      - noindex, nofollow, nosnippet
       Expires:
-      - Thu, 09 Apr 2015 14:42:22 GMT
+      - Tue, 19 Feb 2019 19:10:03 GMT
       Date:
-      - Thu, 09 Apr 2015 14:42:22 GMT
+      - Tue, 19 Feb 2019 19:10:03 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Vary:
@@ -2098,21 +862,11 @@ http_interactions:
       Gdata-Version:
       - '3.0'
       Etag:
-      - W/"CkIAQ385eSt7ImA9XRRbFUQ."
+      - W/"CUMEQnw9cCt7ImA9XBNTFk0."
       Last-Modified:
-      - Thu, 09 Apr 2015 14:42:22 GMT
+      - Tue, 19 Feb 2019 19:10:03 GMT
       Content-Encoding:
       - gzip
-      Set-Cookie:
-      - NID=67=I5MHMCWXHc41qNpvOgEqYCugviCVFYDMe7qNwkJ2C3In_Cv7LZ8tuH6PqYt9ZDAGguCbmbaKg7Pixheu_T0qI2zJISCuIB3lHP2kuOkcwP8DEtujLc5HQ90lZVyaWupo;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:22 GMT;HttpOnly
-      - NID=67=VxGJeq_5XNQbzgywgfjKOwjC3xcsrOY2742J1f4I9Se5v6TGSoAwCv_J8UMIUw9eWv5XM5Hx-n4vd9SsCvyScDJQ_V73sMG-oPdnWhtJVcNPxwTYodn4WPOPWCv6wyOS;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:22 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -2121,70 +875,73 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAANRVbU/bMBD+K5GQ8IepcRIoL8FJ14GKYEJaW97El8kk1zTD
-        sTPboe2/n53QEibRrdK0dZ+s891zfu6x70x684I5zyBVLniEfNdDDvBEpDnP
-        InRzPegcoV5MJgCpYyK5itBU6zLEeDabubM9V8gMB57XxX0tCtTEhKIEPgYq
-        k+kqnB67iShwB6sSEmwDVB2AfdfHS9wj1S2ISqZQUOVmQmQManiWUk1xHbbE
-        ZGodQJUSaKqmAFpZngcrWLr2nLom5GRpCJoaJe7w7vdK6JPTp4v+cO+oC2N9
-        eFH0j+9Ho8fBzdBtvCgmeRrbtMrmbZ3dTm7FVDgBxhT2+s9n34rDKpgMs6/p
-        uQqGRfd+yMXe3dng9oZfqqvz7ue7+9uHB25USw9wKfNnqgFPKsYINqeRqjSi
-        QBoHnt/tePsd7/ja3w/3gzAIXD/wHwheRpDELJmQC6cuGTYUToMsNoLs2BoR
-        jonONYN4bD0+wY1FWM6fHAksQpSZ1NxwM2csSkNLw1zjqS4YcqYSJs2h6yRN
-        kqT3BItoEzktsVcOv3oLO/bWlvxoWbLciGl6BlPz7j/Mf5/qH7v9DfmXQun/
-        mf9L029RAS9z6E0ZCthkq0j2ipx3EsEif5cW5UlB5y1Lgq4k70BR6kWkZQWr
-        GClmUdBYBl9btlBa6amQMeG0gFgKIR8zKAiuTWIuLmer3Y+ZNW0xBDcegpfw
-        1/8h1EJTNgJVMa1iMxzec7UxSlOpL3gK858QLQfJVGhon4qK69j3PILbG9Zr
-        ZGiMoHGubAJcmxm5mv3NbIfFZfYl+3Q1GKu/N+1Hwam/8ZQ37y6ENNfLLzs0
-        G+9824fY+NCapK+5/vXv0Q9WP0ciuAZ7cXMjztLY5ias7/HtoLCibidH2wom
-        nWObHgXIseMC+cjJeVnpW8oqw9gojxr5X6JNc9ddY1bLKP4BAAD//wMAchDP
-        /VgKAAA=
+      encoding: UTF-8
+      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:batch='http://schemas.google.com/gdata/batch'
+        xmlns:gs='http://schemas.google.com/spreadsheets/2006' xmlns:gd='http://schemas.google.com/g/2005'
+        gd:etag='W/&quot;CUMEQnw9cCt7ImA9XBNTFk0.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full</id><updated>2019-02-19T19:10:03.268Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>Sheet1</title><link
+        rel='alternate' type='application/atom+xml' href='https://docs.google.com/a/staq.com/spreadsheets/d/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/edit'/><link
+        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/batch'/><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full?return-empty=true&amp;min-row=2&amp;max-col=1&amp;min-col=1&amp;max-row=2'/><author><name>domenick</name><email>domenick@staq.com</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>1000</gs:rowCount><gs:colCount>26</gs:colCount><entry
+        gd:etag='&quot;eyJgPgBMFSs.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C1</id><updated>2019-02-19T19:10:03.268Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:10:03.268Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>A2</title><content>2x1</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C1'/><gs:cell
+        row='2' col='1' inputValue='2x1'>2x1</gs:cell></entry></feed>"
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:22 GMT
+  recorded_at: Tue, 19 Feb 2019 19:10:12 GMT
 - request:
     method: post
-    uri: https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full/batch
+    uri: https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/batch
     body:
       encoding: UTF-8
       string: |2
                       <feed xmlns="http://www.w3.org/2005/Atom"
                             xmlns:batch="http://schemas.google.com/gdata/batch"
                             xmlns:gs="http://schemas.google.com/spreadsheets/2006">
-                        <id>https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full</id>
+                        <id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full</id>
                         <entry>
                           <batch:id>2,1</batch:id>
                           <batch:operation type="update"/>
-                          <id>https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/R2C1</id>
-                          <link rel="edit" type="application/atom+xml"
-                            href="https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full/R2C1"/>
-                          <gs:cell row="2" col="1" inputValue="2x1"/>
+                          <id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C1</id>
+                          <link
+                            rel="edit"
+                            type="application/atom+xml"
+                            href="https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C1"/>
+                          <gs:cell
+                            row="2"
+                            col="1"
+                            inputValue="2x1"/>
                         </entry>
-                      </feed>
+                  </feed>
     headers:
       User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 19 Feb 2019 19:10:12 GMT
       Gdata-Version:
       - '3.0'
       Content-Type:
       - application/atom+xml;charset=utf-8
       If-Match:
       - "*"
-      Accept-Encoding:
-      - gzip
       Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
+      Cookie:
+      - NID=160=hBfNxqTykE6FpYndPhNloAUEtiWY2q1x3umM9RPy10qvtYrGuaRzC7lIpB3bWTR5AeQl29vSVVnOD1SqZ_yDWMMY7S9Vqm0ptao4JikfLS4LKHSPDv7IQxo7eYmuIZJXZWN-y5mUC3CDXdbxEGMUCWWDgkdxgKobk-WJejEZkMQ
   response:
     status:
       code: 200
@@ -2192,24 +949,16 @@ http_interactions:
     headers:
       Content-Type:
       - application/atom+xml; charset=UTF-8; type=feed
+      X-Robots-Tag:
+      - noindex, nofollow, nosnippet
       Gdata-Version:
       - '3.0'
       Content-Encoding:
       - gzip
-      Set-Cookie:
-      - NID=67=XdT2XTeGC8sPcdGYJ7-8xdqWher7w-a2FbKO5utY1zbYHLE4ETiTKVn2V2WCFfqvc82J23KkaJMzG0EH3UJ0lF_bbyscD-sm4U3iWPfUWD2KIcjAiAkUeZFzc4O6z3XC;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:23 GMT;HttpOnly
-      - NID=67=h4T32DtBvdWE2Y110N_stNN_i-7-v7i_Ew3WEPKfHa6ItGXrArHtlKYWKgZfV0KEEILVd1SjlP2_OpqeOa920Y2CHbyX39fsY-D9EJnyv-jXU9PB9sgDbp1q9fWrGboK;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:23 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
       Date:
-      - Thu, 09 Apr 2015 14:42:23 GMT
+      - Tue, 19 Feb 2019 19:10:04 GMT
       Expires:
-      - Thu, 09 Apr 2015 14:42:23 GMT
+      - Tue, 19 Feb 2019 19:10:04 GMT
       Cache-Control:
       - private, max-age=0
       X-Content-Type-Options:
@@ -2220,51 +969,48 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAM1UUW/aMBD+K5EmzQ8bcWwIhSykoquo1KnSGC2teJmy5DDZ
-        nDiLHSj/fueEUF6G1odNe4py/r7zd9/dObx8zqWzhUpnqpgQ5nrEgSJRaVaI
-        CXm4n/VG5DIK1wCpg8hCT8jGmDKgdLfbubu+qypBuef5dGpUTlpMoEooFhBX
-        yeYIj8duonLao7qEhFqAbgCUuYx2vG+xOaHoZAN5rF2hlJDQ0EUam5g2sI4j
-        9DmCLiuIU70BMNrqHJIozNLIErRlnByf0my9miYgpabedHv9Pb+o+XouvqY3
-        ms9z/2leqP7j9Wz5UNzquxv/0+PTcrUqsLB02MqjbMBH/tjzB302ZCHFS8O6
-        RPmQRtxjfs8b9LzxPRsEAx7wvsvZaBXSDhGazEiIrmwmZ4ZiQtpGQihMte9K
-        T8961fSFOCINwMTYzbc/a2U+wP5WfBZXd7OFdtvIP7DkC//4Bx6wETv1IC7L
-        ANLMdKMXYOA343dB8YycSfqSKwoTTC8UutiYBq8bH8dAlb+K8sZ6RmjX0yk/
-        9jJRhcF+RvwZzel+QpkVP5wK5IRokGu8cF+iRixAZqgc15TGuGrv0BLibCpY
-        t2L+WuvKKtuiYXRdS9n00ZbyotGa+n9qFDqw6ZxK7SaEEydRKJcRJyvK2ixj
-        WaNidJ609h/QUdhsb4Cjyt9j+Ph3iGsTm1pjrtSyPXwtsRxtn85FnSSgtb25
-        heIbVzVeHNxp59qe02aJ8WuLjn4BPXb4LYMFAAA=
+      encoding: UTF-8
+      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:batch='http://schemas.google.com/gdata/batch'
+        xmlns:gs='http://schemas.google.com/spreadsheets/2006'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/batch/1550603404181</id><updated>2019-02-19T19:10:04.220Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>Batch
+        Feed</title><entry xmlns:gd='http://schemas.google.com/g/2005' gd:etag='&quot;eyJgPgBMFSs.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C1</id><updated>2019-02-19T19:10:03.268Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:10:03.268Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>A2</title><content>2x1</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C1'/><gs:cell
+        row='2' col='1' inputValue='2x1'>2x1</gs:cell><batch:id>2,1</batch:id><batch:status
+        code='200' reason='Success'/><batch:operation type='update'/></entry></feed>"
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:23 GMT
+  recorded_at: Tue, 19 Feb 2019 19:10:12 GMT
 - request:
     method: get
-    uri: https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full?max-col=2&max-row=2&min-col=2&min-row=2&return-empty=true
+    uri: https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full?max-col=2&max-row=2&min-col=2&min-row=2&return-empty=true
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
-      Gdata-Version:
-      - '3.0'
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
       Accept:
       - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 19 Feb 2019 19:10:12 GMT
+      Gdata-Version:
+      - '3.0'
+      Authorization:
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Cookie:
+      - NID=160=hBfNxqTykE6FpYndPhNloAUEtiWY2q1x3umM9RPy10qvtYrGuaRzC7lIpB3bWTR5AeQl29vSVVnOD1SqZ_yDWMMY7S9Vqm0ptao4JikfLS4LKHSPDv7IQxo7eYmuIZJXZWN-y5mUC3CDXdbxEGMUCWWDgkdxgKobk-WJejEZkMQ
   response:
     status:
       code: 200
@@ -2272,10 +1018,12 @@ http_interactions:
     headers:
       Content-Type:
       - application/atom+xml; charset=UTF-8; type=feed
+      X-Robots-Tag:
+      - noindex, nofollow, nosnippet
       Expires:
-      - Thu, 09 Apr 2015 14:42:23 GMT
+      - Tue, 19 Feb 2019 19:10:04 GMT
       Date:
-      - Thu, 09 Apr 2015 14:42:23 GMT
+      - Tue, 19 Feb 2019 19:10:04 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Vary:
@@ -2283,21 +1031,11 @@ http_interactions:
       Gdata-Version:
       - '3.0'
       Etag:
-      - W/"CkIAQn8zeSt7ImA9XRRbFUQ."
+      - W/"CUMERX8yeyt7ImA9XBNTFk0."
       Last-Modified:
-      - Thu, 09 Apr 2015 14:42:23 GMT
+      - Tue, 19 Feb 2019 19:10:04 GMT
       Content-Encoding:
       - gzip
-      Set-Cookie:
-      - NID=67=cfTkFDDv81KCFykXY_WnGF0S_awSy9f4_uJO1zX-YGtMJtgb7Z_nUF2AogoLcz_UvYi8nUozwvNHj2ixelMdAiHSpilml7Ye_arWVRW5NwYxtQP8-mUGD0mCSbpd9x5x;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:23 GMT;HttpOnly
-      - NID=67=pYN0XXLspFIn7YYzWYPriHzpj2_SBdXqgJAj0sOtqHxBVF8IMYLpvZwegC3fVFNuBj63gLNAkeDj4x2Xq2lCfuhCern2cNiXAzTrcNh4hpOx7KXHA6qi0FqWPWEoFZYM;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:23 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -2306,70 +1044,73 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAANRVUW/aMBD+K5EqLQ8TOElLaVMTRlu1YtMeoKVUfZlMcoSs
-        jp3ZlwL79bOTQumksiFNG3uyznff+bvPvjPtLnLuPIHSmRQd1296rgMilkkm
-        0o47ur1qnLjdiE4BEsdECt1xZ4hFSMh8Pm/OD5tSpSTwvBbpoczdOiaUBYgb
-        YCqercPZaTOWOWkQXUBMbICuAojf9MkKN2G4AdHxDHKmm6mUKYcKniYMGanC
-        VphUbwPoQgFL9AwAteV5vIYlW8+panKdNAkBmVFiTN59KyWeXTz2ewNx8h1u
-        sN3Pe6f3w+HkajRo1l43olkS2bTa5t04ezO5FVOTGDjXxOs9XX7N22UwHaRf
-        kmsdDPLW/UDIw/Hl1d1IfNSfr1ufxvd3Dw/CqJYck0JlTwyBTEvOKTGn0bIw
-        okASBZ7fanhHDe/01j8Kj4IwOGz6J/4DJasIGpsllWrpVCXDjsIhqHwnyIGt
-        0SURxQw5RDfW41NSW5Rn4tFRwDsu4ya1MNzMGcvC0EJYIJlhzl1npmBaH7pN
-        0jiOu4+w7OwipyX2wuFXb+HA3tqKHysKnhkxTc8QZt79+8XvU/1jt78j/0Jq
-        /J/5Pzf9HhXwPIdelaGBT/eKZDfPRCOWvBO8Y3lxlrPFhqUASyUakBe47KAq
-        YR2j5HyFMPjKsoWyEmdSRVSwHCIlpZqkkFNSmdRcXMbXux9Sa9piKKk9lKzg
-        L/9DiBIZH4IuOerIDIe3XJsYjUxhXySw+Amx4aCpDg3tC1kKjHzPo2Rzw3qN
-        DLUR1M61TUGgmZHr2V/P9n5+juPFaHK7xPZfm/bD4CLYecqbdxdCkuHqyw7N
-        xhvfdpsYn7sl6Uuuf/17nAfrnyOWAsFe3MLsrYx9bsLqHl8PCivqfnK0rWDS
-        Obbp3cB17LiwayaKEu8YLw1jo7xby/8cbZq76hqzWkbRDwAAAP//AwCj/2DH
-        WAoAAA==
+      encoding: UTF-8
+      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:batch='http://schemas.google.com/gdata/batch'
+        xmlns:gs='http://schemas.google.com/spreadsheets/2006' xmlns:gd='http://schemas.google.com/g/2005'
+        gd:etag='W/&quot;CUMERX8yeyt7ImA9XBNTFk0.&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full</id><updated>2019-02-19T19:10:04.193Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>Sheet1</title><link
+        rel='alternate' type='application/atom+xml' href='https://docs.google.com/a/staq.com/spreadsheets/d/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/edit'/><link
+        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/batch'/><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full?return-empty=true&amp;min-row=2&amp;max-col=2&amp;min-col=2&amp;max-row=2'/><author><name>domenick</name><email>domenick@staq.com</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>1000</gs:rowCount><gs:colCount>26</gs:colCount><entry
+        gd:etag='&quot;ImBtWxUbTyt7&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C2</id><updated>2019-02-19T19:10:04.193Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:10:04.193Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>B2</title><content>2x2</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C2'/><gs:cell
+        row='2' col='2' inputValue='2x2'>2x2</gs:cell></entry></feed>"
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:23 GMT
+  recorded_at: Tue, 19 Feb 2019 19:10:13 GMT
 - request:
     method: post
-    uri: https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full/batch
+    uri: https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/batch
     body:
       encoding: UTF-8
       string: |2
                       <feed xmlns="http://www.w3.org/2005/Atom"
                             xmlns:batch="http://schemas.google.com/gdata/batch"
                             xmlns:gs="http://schemas.google.com/spreadsheets/2006">
-                        <id>https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full</id>
+                        <id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full</id>
                         <entry>
                           <batch:id>2,2</batch:id>
                           <batch:operation type="update"/>
-                          <id>https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/R2C2</id>
-                          <link rel="edit" type="application/atom+xml"
-                            href="https://spreadsheets.google.com/feeds/cells/0AvDjm7u2fQg_dGs2Qm5XQno3WDFVUnJsMG5KWXVZZnc/od6/private/full/R2C2"/>
-                          <gs:cell row="2" col="2" inputValue="2x2"/>
+                          <id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C2</id>
+                          <link
+                            rel="edit"
+                            type="application/atom+xml"
+                            href="https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C2"/>
+                          <gs:cell
+                            row="2"
+                            col="2"
+                            inputValue="2x2"/>
                         </entry>
-                      </feed>
+                  </feed>
     headers:
       User-Agent:
-      - |-
-        google_drive Ruby library/0.4.0 google-api-ruby-client/0.8.2 Mac OS X/10.10.3
-         (gzip)
+      - unknown/0.0.0 google-api-ruby-client/0.21.2 Mac OS X/10.13.2 (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 19 Feb 2019 19:10:13 GMT
       Gdata-Version:
       - '3.0'
       Content-Type:
       - application/atom+xml;charset=utf-8
       If-Match:
       - "*"
-      Accept-Encoding:
-      - gzip
       Authorization:
-      - Bearer ya29.UAGFR3CGA8sFg9bFFTXvD3Wv8ML3vdIdz7dVRhrJarY155OQPBPAGbJYbtmD2TKmkL0nbmyD3C0J0Q
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
+      - Bearer ya29.Gly1BoWhUSsqsHUNUFun7ihrmHUXdXMAmoReOi94X_jMZpJ4T7RRyz_LpMVrou8fADIXbC-P15rEaN2oXwP8AAQ6XMJyDK9XS8ECOso4Y3SMhGPZGI4dcF1NhL-Zew
+      Cookie:
+      - NID=160=hBfNxqTykE6FpYndPhNloAUEtiWY2q1x3umM9RPy10qvtYrGuaRzC7lIpB3bWTR5AeQl29vSVVnOD1SqZ_yDWMMY7S9Vqm0ptao4JikfLS4LKHSPDv7IQxo7eYmuIZJXZWN-y5mUC3CDXdbxEGMUCWWDgkdxgKobk-WJejEZkMQ
   response:
     status:
       code: 200
@@ -2377,24 +1118,16 @@ http_interactions:
     headers:
       Content-Type:
       - application/atom+xml; charset=UTF-8; type=feed
+      X-Robots-Tag:
+      - noindex, nofollow, nosnippet
       Gdata-Version:
       - '3.0'
       Content-Encoding:
       - gzip
-      Set-Cookie:
-      - NID=67=NNKvd1yvY2Nwx0y1OZ5wmu8lVjuk6eqa_1T-OALtjOz39hA0R1gbCgFCgvCLrogD4VpGi9f0wyPxz4_LK3lPRzOECsj4Ty6fq8MFo-qm4IuAICAfkkUvQji7SGBq5Mfo;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:24 GMT;HttpOnly
-      - NID=67=ll7Yja_eoRHPEl3QclKl1Xy5yGp65DutuES4jbQWxbnQqMZ2RVuIBKXF8VdSnlTPFOJG5uR-dg9JVOf9C09uQoT3KISE1pGSnXErcZzpZCi3yhDZqcQOreQnff56QX3V;Domain=.google.com;Path=/;Expires=Fri,
-        09-Oct-2015 14:42:24 GMT;HttpOnly
-      P3p:
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
-        for more info."
       Date:
-      - Thu, 09 Apr 2015 14:42:24 GMT
+      - Tue, 19 Feb 2019 19:10:04 GMT
       Expires:
-      - Thu, 09 Apr 2015 14:42:24 GMT
+      - Tue, 19 Feb 2019 19:10:04 GMT
       Cache-Control:
       - private, max-age=0
       X-Content-Type-Options:
@@ -2405,26 +1138,23 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.5
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39"
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAM1Uy27bMBD8FQEFykNrUaKl2FZpBUkDB2nRgxs/Al8KRqRl
-        tZSoipQff9+lZDm+1GgOLXoiuJxZzs4uSa/3uXS2otKZKsbIdz3kiCJRPCvS
-        MZrPJr0huo7pWgjuALLQY7Qxpoww3u127q7vqirFxPNCfGNUjlpMpEpRPApW
-        JZsTnI3cROW4h3UpEmwBugFg3/Vxx3tm5oyik43ImXZTpVIpGnrKmWG4gXWc
-        VF8i6LISjOuNEEZbnVcophmPLUFbxtnxOc3Wq3EipNTYu9nefc8HNVlP02/8
-        XpNpHj5NC9Vf3k0W8+KT/nIffl4+LVarAgrjV6087AdkGI68MAj84ZBiuJTW
-        JcgXPCaeH/a8oOeNZn4QBSQigUv6wYriDkFNZqSIb20mZwJiKG4jVBSmOnSl
-        84teNX1BTsojYRh08+3PWpkPD/mtWe7nz7ODGbSRf2DJV/KR/IEH3uDcA1aW
-        keCZ6UYvgsBvxm+A4QxdSPqSK6YJpE8VuNiYJl43Po4RVf4qyhvrGcKnnpJT
-        LxNVGOhnTPYQ6zZUZsUPpxJyjLSQa7jwUIJGKEBmoByeKWbw1N6BJcjZVGLd
-        ivlrrSurbAuG4XUtZdNHW8qLRmvq/6kx1ZFN51RqN0YEOYmSzZoVZW0WTNag
-        GJxHrf1HdEyb1xvBqJL3ED7tjnFtmKk15OKW7cFvCeVo+3U+1kkitLY3t1D4
-        46rGi6M77Vzbc9w8Ylht0fEvojNR0oMFAAA=
+      encoding: UTF-8
+      string: "<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:batch='http://schemas.google.com/gdata/batch'
+        xmlns:gs='http://schemas.google.com/spreadsheets/2006'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/batch/1550603404956</id><updated>2019-02-19T19:10:04.997Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>Batch
+        Feed</title><entry xmlns:gd='http://schemas.google.com/g/2005' gd:etag='&quot;ImBtWxUbTyt7&quot;'><id>https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/R2C2</id><updated>2019-02-19T19:10:04.193Z</updated><app:edited
+        xmlns:app='http://www.w3.org/2007/app'>2019-02-19T19:10:04.193Z</app:edited><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title>B2</title><content>2x2</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/1LeDeTphQl8R741GFrzwAODSdfxcddR1oH5GImkY6Ry4/od6/private/full/R2C2'/><gs:cell
+        row='2' col='2' inputValue='2x2'>2x2</gs:cell><batch:id>2,2</batch:id><batch:status
+        code='200' reason='Success'/><batch:operation type='update'/></entry></feed>"
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 14:42:24 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Tue, 19 Feb 2019 19:10:13 GMT
+recorded_with: VCR 4.0.0
