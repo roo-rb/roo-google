@@ -3,11 +3,14 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in roo-xls.gemspec
 gemspec
 
-if ENV['TRAVIS']
-  gem 'roo', '>= 2.0.0beta1', github: 'roo-rb/roo'
-else
-  gem 'roo', '>= 2.0.0beta1', path: ::File.expand_path('../../roo', __FILE__)
+roo_opts = {}
+if !ENV['TRAVIS']
+  roo_opts[:path] = ::File.expand_path('../../roo', __FILE__)
+elsif Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("2.3.0")
+  roo_opts[:github] = 'roo-rb/roo'
 end
+
+gem 'roo', '>= 2.0.0beta1', roo_opts
 
 group :test do
   # additional testing libs
@@ -28,5 +31,4 @@ group :local_development do
   gem 'guard-reek', github: 'pericles/guard-reek', require: false
   gem 'pry'
   gem 'appraisal'
-  gem 'transpec'
 end
