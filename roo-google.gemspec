@@ -6,7 +6,7 @@ require 'roo/google/version'
 Gem::Specification.new do |spec|
   spec.name          = "roo-google"
   spec.version       = Roo::GOOGLE_VERSION
-  spec.authors       = ["Thomas Preymesser", "Hugh McGowan", "Ben Woosley", "Oleksandr Simonov"]
+  spec.authors       = ["Thomas Preymesser", "Hugh McGowan", "Ben Woosley", "Oleksandr Simonov", "Anmol Chopra"]
   spec.email         = ["ruby.ruby.ruby.roo@gmail.com", "oleksandr@simonov.me"]
   spec.summary       = "Roo::Google extend Roo to support google spreadsheet files."
   spec.description   = "Roo::Google extend Roo to support google spreadsheet files."
