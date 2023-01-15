@@ -18,3 +18,4 @@ guard :preek, run_all_dir: 'lib' do
 	watch(/^lib\/(.*).rb/)
 end
 
+# vi: ft=ruby
