@@ -1,6 +1,6 @@
 # Roo::Google
 
-[![Build Status](https://img.shields.io/travis/roo-rb/roo-google.svg?style=flat-square)](https://travis-ci.org/roo-rb/roo-google) [![Code Climate](https://img.shields.io/codeclimate/github/roo-rb/roo-google.svg?style=flat-square)](https://codeclimate.com/github/roo-rb/roo-google) [![Coverage Status](https://img.shields.io/coveralls/roo-rb/roo-google.svg?style=flat-square)](https://coveralls.io/r/roo-rb/roo-google) [![Gem Version](https://img.shields.io/gem/v/roo-google.svg?style=flat-square)](https://rubygems.org/gems/roo-google)
+[![Build Status](https://github.com/roo-rb/roo-google/actions/workflows/ruby.yml/badge.svg?branch=master)](https://github.com/roo-rb/roo-google/actions/workflows/ruby.yml?query=branch%3Amaster) [![Code Climate](https://img.shields.io/codeclimate/github/roo-rb/roo-google.svg?style=flat-square)](https://codeclimate.com/github/roo-rb/roo-google) [![Coverage Status](https://img.shields.io/coveralls/roo-rb/roo-google.svg?style=flat-square)](https://coveralls.io/r/roo-rb/roo-google) [![Gem Version](https://img.shields.io/gem/v/roo-google.svg?style=flat-square)](https://rubygems.org/gems/roo-google)
 
 ## Google Spreadsheet
 
